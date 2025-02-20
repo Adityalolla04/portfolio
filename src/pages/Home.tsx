@@ -70,20 +70,23 @@ const Home = () => {
     <div className="about-right">
       <h3>Summary</h3>
       <p>
-        A **Data Engineer & AI Enthusiast** with expertise in **Big Data, ETL, and Machine Learning**.  
-        Passionate about **building scalable data pipelines** and optimizing **data workflows**.  
-        Skilled in **Python, SQL, Spark, AWS, and Azure**, focusing on **cloud-based data solutions**.  
-        Interested in **automation, AI-driven insights, and real-world applications of data science**.  
-        Strong believer in **continuous learning, innovation, and problem-solving**.  
+      A Software Engineer and AI enthusiast with expertise in Big Data, ETL, and Machine Learning,focused on building scalable data pipelines 
+      and optimizing workflows. Proficient in Python, SQL, Spark, AWS, Azure, C#, and .NET Web API, with experience in cloud-based data solutions 
+      and automation. Interested in AI-driven insights and real-world applications of data science, with a strong emphasis on continuous learning 
+      and problem-solving.  
       </p>
 
       <h3>Skills</h3>
       <ul className="bullet-list">
-        <li>Python, SQL, Spark, AWS, Azure</li>
-        <li>Data Engineering, ETL, ML, AI</li>
-        <li>Cloud Computing & Distributed Systems</li>
-        <li>Data Visualization & Business Intelligence</li>
-      </ul>
+    <li><strong>Programming Languages:</strong> Python, Java, SQL, C, C++, R, TypeScript</li>
+    <li><strong>Big Data Tools:</strong> Apache Spark, Hadoop, Splunk</li>
+    <li><strong>Scrum Management:</strong>Scrum Fundementals, Lean Six Sigma(Green-Belt)</li>
+    <li><strong>Frameworks & Libraries:</strong> Machine Learning Applications(Regression, classification, SVM, Neural Network, CNN), 
+    Matplotlib, NumPy, Pandas, TensorFlow, Keras, Scikit-learn, Streamlit</li>
+    <li><strong>DevOps Tools:</strong> Azure, Docker, Jenkins, Git, AWS</li>
+    <li><strong>Software Development Concepts:</strong> Object-Oriented Programming (OOP), Problem Solving</li>
+</ul>
+
 
       <h3>Languages Known</h3>
       <ul className="bullet-list">
@@ -117,26 +120,42 @@ const Home = () => {
             <p><strong>Company:</strong> Evoke Technologies</p>
             <p><strong>Duration:</strong> Apr 2022 - Dec 2023</p>
             <ul>
-              <li>Designed real-time and batch data pipelines using Apache Spark, Kafka, and Python.</li>
-              <li>Developed cloud-based storage solutions using AWS Redshift, Snowflake, and BigQuery.</li>
-              <li>Led ETL pipeline development for analytics, ensuring compliance with data governance.</li>
+              <li>Led the development of UCC1 and UCC3 amendments for legal services at CSC Global, ensuring 100% on-time 
+                delivery through sprint planning and collaboration.</li>
+              <li>Conducted data analysis using SQL, built data pipelines with Python, and implemented machine learning models, 
+                resolving 40+ defects and optimizing processes.</li>
+              <li>Managed UCC1 and UCC3 migration from V2 to V3 in the .NET Core web application, ensuring a smooth transition.</li>
+              <li>Developed UI features(Type Script) like Global Edit and Filter Types, improving platform stability by 70% and 
+                enhancing user satisfaction.</li>
+              <li>Provided solutions for production issues and on-call deployments, boosting business performance by 30%.</li>
+              <li>Optimized the deployment process, reducing update downtime by 20% through efficient coordination 
+                and issue resolution.</li>
             </ul>
+
           </div>
           <div className="experience-card">
             <h3>Business Analyst</h3>
             <p><strong>Company:</strong> Kannai Storage Solutions</p>
             <p><strong>Duration:</strong> Aug 2021 - Mar 2022</p>
             <ul>
-              <li>Developed SAP-integrated automation tools, reducing warehouse turnaround time by 50%.</li>
+              <li>Secured and managed business leads through cold calling and project management for Racking Systems, 
+                increasing sales efficiency by 70%.</li>
+              <li>Developed 35+ custom racking solutions using AutoCAD and SAP, and created 5+ Python and 
+                CNC programming scripts for automated racking systems,boosting sales performance by 50%.</li>
             </ul>
+
           </div>
           <div className="experience-card">
             <h3>Software Intern</h3>
             <p><strong>Company:</strong> Workbot Pvt Ltd</p>
             <p><strong>Duration:</strong> Jul 2020 - Jul 2021</p>
             <ul>
-              <li>Designed React.js dashboards for real-time data visualization.</li>
+              <li>Optimized SQL queries and ETL pipelines to enhance data processing for Chemical and Air Compressor manufacturing, 
+                improving efficiency by 40% and reducing query execution time by 25%.</li>
+              <li>Applied Six Sigma methodologies to identify and eliminate inefficiencies in manufacturing processes, 
+                reducing material waste by 15%.</li>
             </ul>
+
           </div>
         </div>
       </section>
@@ -148,16 +167,22 @@ const Home = () => {
           <div className="project-card">
             <img src={HRChurnImage} alt="HR Churn" className="project-image" />
             <h3>End to End Project on HR Churn Data</h3>
+            <p>The aim of this project is to predict employee churn and evaluate satisfaction levels using machine learning techniques. 
+              By leveraging key organizational data, the project seeks to provide actionable insights to help HR departments mitigate turnover risks </p>
             <a href="https://github.com/Adityalolla04/End-to-End-Project-on-HR-Churn-Data" target="_blank" rel="noopener noreferrer" className="view-project-btn">View Project</a>
           </div>
           <div className="project-card">
             <img src={NetflixTitlesImage} alt="Netflix Titles" className="project-image" />
             <h3>Netflix Release Date Optimization for Maximum Viewership</h3>
+            <p>The Netflix Release Date Optimization project demonstrates how data analytics and machine learning can help optimize the timing of content releases for maximum audience engagement. 
+              By identifying seasonal trends, popular genres, and predictive insights, this project provides a robust framework for decision-making in the media industry</p>
             <a href="https://github.com/Adityalolla04/Netflix-Release-Date-Optimization-for-Maximum-Viewership" target="_blank" rel="noopener noreferrer" className="view-project-btn">View Project</a>
           </div>
           <div className="project-card">
             <img src={HRChurnImage} alt="Breast Cancer Prediction Using Machine Learning" className="project-image" />
             <h3>Breast Cancer Prediction Using Machine Learning</h3>
+            <p>This project demonstrates the application of logistic regression for predicting breast cancer diagnosis using the Breast Cancer Wisconsin dataset. 
+              This model offers a robust approach to classifying tumors as malignant or benign based on critical tumor features.</p>
             <a href="https://github.com/Adityalolla04/Breast-Cancer-Prediction-Using-Machine-Learnings" target="_blank" rel="noopener noreferrer" className="view-project-btn">View Project</a>
           </div>
         </div>
