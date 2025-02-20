@@ -22,7 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "homepage": "https://Adityalolla04.github.io",
+    "homepage": "https://Adityalolla04.github.io/portfolio",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
