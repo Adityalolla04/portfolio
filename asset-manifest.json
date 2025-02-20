@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.1421bcc2.css",
-    "main.js": "/static/js/main.77cdd3bf.js",
-    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
-    "static/media/HRChurn.png": "/static/media/HRChurn.0ec5c9901820e5a2a085.png",
-    "static/media/BackGround.jpg": "/static/media/BackGround.bf6ee0a9d34b9661640d.jpg",
-    "static/media/NetflixTitles.png": "/static/media/NetflixTitles.c754b3c7eb5edb21940e.png",
-    "static/media/profile.jpg": "/static/media/profile.6f2755d7baab90bf2d0e.jpg",
-    "index.html": "/index.html",
-    "main.1421bcc2.css.map": "/static/css/main.1421bcc2.css.map",
-    "main.77cdd3bf.js.map": "/static/js/main.77cdd3bf.js.map",
-    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.d0858034.css",
+    "main.js": "/portfolio/static/js/main.80798b18.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/HRChurn.png": "/portfolio/static/media/HRChurn.0ec5c9901820e5a2a085.png",
+    "static/media/BackGround.jpg": "/portfolio/static/media/BackGround.bf6ee0a9d34b9661640d.jpg",
+    "static/media/NetflixTitles.png": "/portfolio/static/media/NetflixTitles.c754b3c7eb5edb21940e.png",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.6f2755d7baab90bf2d0e.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.d0858034.css.map": "/portfolio/static/css/main.d0858034.css.map",
+    "main.80798b18.js.map": "/portfolio/static/js/main.80798b18.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1421bcc2.css",
-    "static/js/main.77cdd3bf.js"
+    "static/css/main.d0858034.css",
+    "static/js/main.80798b18.js"
   ]
 }
