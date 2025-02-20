@@ -6,38 +6,25 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
-/* 🔹 Fix Navbar & Add Proper Spacing */
+/* 🔹 Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;  /* Reduced padding */
+  padding: 15px 30px;
   background: #181818;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  height: 60px; /* Reduced navbar height */
+  height: 65px;
 }
 
-/* 🔹 Ensure Spacing Below Navbar */
-.home {
-  text-align: center;
-  padding: 120px 20px;  /* Increased padding to prevent overlap */
-  margin-top: 80px;  /* Ensures separation from navbar */
-}
-
-.main-title {
-  font-size: 4rem;
-  font-weight: bold;
-  margin-top: 20px;  /* Added spacing */
-  margin-bottom: 10px;
-}
-
-/* 🔹 Navbar Link Styling */
+/* 🔹 Navbar Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -61,153 +48,267 @@ body {
   color: #f4a261;
 }
 
-
-/* Home Section */
+/* 🔹 Home Section */
 .home {
-  text-align: center;
-  padding: 120px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 10%;
   margin-top: 80px;
+  height: 100vh;
+  text-align: center;
 }
 
 .main-title {
-  font-size: 4.2rem;
+  font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .highlight {
-  color: #f4a261;
+  color: #00FFFF;
 }
 
 .role-text {
-  font-size: 2rem;
-  color: #f4a261;
+  font-size: 1.8rem;
+  color: #D3D3D3;
   margin-top: 10px;
 }
 
-.intro-text {
-  max-width: 800px;
-  margin: 20px auto;
-  font-size: 1.3rem;
+/* 🔹 Sections */
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
 }
 
-/* About Section */
+/* 🔹 About Section */
 .about-container {
   display: flex;
-  justify-content: space-between;
-  padding: 60px;
-  align-items: flex-start;
-  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 10%;
 }
 
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* 🔹 Left Side (Profile + Education) */
 .about-left {
   flex: 1;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.about-right {
-  flex: 2;
-  text-align: left;
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f4a261;
+  margin-bottom: 15px;
 }
 
 .education-card {
   background: #1e1e1e;
   padding: 20px;
   border-radius: 10px;
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+/* 🔹 Right Side (Text-Only, No Cards) */
+.about-right {
+  flex: 2;
+  text-align: left;
+  max-width: 600px;
+}
+
+.about-right h3 {
+  color: #f4a261;
+  margin-bottom: 5px;
+}
+
+.about-right p {
+  font-size: 1.1rem;
   margin-bottom: 15px;
 }
 
-.skills-list {
+/* 🔹 Bullet Point List */
+.bullet-list {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 
-.skills-list li {
-  background: #1e1e1e;
-  padding: 12px;
-  margin: 5px 0;
-  border-radius: 5px;
-  font-size: 1rem;
+.bullet-list li {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 20px;
 }
 
-/* Experience Section */
+.bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #f4a261;
+  font-size: 1.5rem;
+}
+
+/* 🔹 Responsive Adjustments */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-left, .about-right {
+    width: 100%;
+  }
+
+  .about-right {
+    text-align: left;
+  }
+}
+
+/* 🔹 Experience Section */
 .experience-section {
   text-align: center;
-  padding: 50px;
+  padding: 60px;
 }
 
 .experience-grid {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
 }
 
 .experience-card {
   background: #1e1e1e;
   padding: 25px;
   border-radius: 12px;
-  flex: 1;
-  margin: 12px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  text-align: left;
 }
 
 .experience-card:hover {
   transform: scale(1.05);
+  background: #2a2a2a;
 }
 
-/* Projects Section */
+/* 🔹 Projects Section */
 .projects-section {
   text-align: center;
   padding: 60px;
 }
 
 .projects-grid {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
 .project-card {
   background: #1e1e1e;
   padding: 25px;
-  margin: 12px;
   border-radius: 12px;
-  transition: transform 0.3s ease-in-out;
-  flex: 1;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  text-align: center;
 }
 
 .project-card:hover {
   transform: scale(1.05);
+  background: #2a2a2a;
 }
 
-/* GitHub Button */
-.github-btn {
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.view-project-btn {
   display: block;
-  margin: 30px auto;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  background: #f4a261;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.view-project-btn:hover {
+  background: #d68b51;
+}
+
+/* 🔹 More Projects Section */
+.more-projects-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: url("../src/assets/images/BackGround.jpg") center/cover no-repeat;
+  background-size: cover; /* Ensures full width */
+  background-position: center;
+  min-height: 350px;
+  width: 100%;
+  color: white;
+}
+
+/* 🔹 Heading Text */
+.github-message {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.github-highlight {
+  color: #f4a261; /* Orange for GitHub Highlight */
+}
+
+/* 🔹 Subtext */
+.github-subtext {
+  font-size: 1.2rem;
+  color: #d3d3d3;
+  margin-bottom: 20px;
+}
+
+/* 🔹 GitHub Button */
+.github-button {
+  display: inline-block;
   padding: 12px 25px;
   font-size: 1.2rem;
+  font-weight: bold;
   color: white;
   background: #f4a261;
   border-radius: 8px;
   text-decoration: none;
-  text-align: center;
-  transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.github-btn:hover {
+.github-button:hover {
   background: #d68b51;
+  transform: scale(1.05);
 }
 
-/* Background Banner for Projects */
-.projects-banner {
-  width: 100%;
-  height: 300px;
-  background: url('') center/cover no-repeat;
-  border-radius: 12px;
-  margin-top: 35px;
-}
 
-/* Contact Section */
+/* 🔹 Contact Section */
 .contact-section {
   text-align: center;
   padding: 50px;
@@ -217,20 +318,22 @@ body {
   display: flex;
   justify-content: center;
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 .contact-card {
-  text-align: center;
   background: #1e1e1e;
   padding: 25px;
   border-radius: 12px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
   flex: 1;
-  max-width: 250px;
+  max-width: 320px;
+  text-align: center;
 }
 
 .contact-card:hover {
   transform: scale(1.05);
+  background: #2a2a2a;
 }
 
 .contact-icon {
@@ -238,7 +341,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Links */
 .contact-card a {
   color: #f4a261;
   text-decoration: none;
@@ -247,4 +349,16 @@ body {
 
 .contact-card a:hover {
   text-decoration: underline;
+}
+
+/* 🔹 Smooth Scroll Animations */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
