@@ -3,9 +3,11 @@ import Typewriter from "typewriter-effect";
 import "../App.css";
 
 // Import images
+import InventoryDashboard from "../assets/images/InventoryDashboard.png"
 import ProfileImage from "../assets/images/profile.jpg";
 import HRChurnImage from "../assets/images/HRChurn.png";
 import NetflixTitlesImage from "../assets/images/NetflixTitles.png";
+import BreastCancer from "../assets/images/BreastCancer.png";
 import BackgroundImage from "../assets/images/BackGround.jpg";
 import { FaEnvelope, FaLinkedin, FaPhone } from "react-icons/fa";
 
@@ -165,12 +167,23 @@ const Home = () => {
         <h2 className="section-title">Projects</h2>
         <div className="projects-grid">
           <div className="project-card">
+            <img src={InventoryDashboard} alt="Inventory Optimization" className="project-image" />
+            <h3>SmartStock AI powered inventory optimization and demand forecasting</h3>
+            <p>SmartStock is an AI-powered inventory management solution designed to optimize supply chain operations through accurate demand forecasting, 
+              dynamic inventory optimization, and automated defect detection. This end-to-end system integrates machine learning and computer vision to minimize costs, 
+              improve resource allocation, and enhance decision-making.
+            </p>
+            <a href="https://github.com/Adityalolla04/-SmartStock-AI-powered-inventory-optimization-and-demand-forecasting" target="_blank" rel="noopener noreferrer" className="view-project-btn">View Project</a>
+          </div>
+
+          <div className="project-card">
             <img src={HRChurnImage} alt="HR Churn" className="project-image" />
             <h3>End to End Project on HR Churn Data</h3>
             <p>The aim of this project is to predict employee churn and evaluate satisfaction levels using machine learning techniques. 
               By leveraging key organizational data, the project seeks to provide actionable insights to help HR departments mitigate turnover risks </p>
             <a href="https://github.com/Adityalolla04/End-to-End-Project-on-HR-Churn-Data" target="_blank" rel="noopener noreferrer" className="view-project-btn">View Project</a>
           </div>
+
           <div className="project-card">
             <img src={NetflixTitlesImage} alt="Netflix Titles" className="project-image" />
             <h3>Netflix Release Date Optimization for Maximum Viewership</h3>
@@ -178,8 +191,9 @@ const Home = () => {
               By identifying seasonal trends, popular genres, and predictive insights, this project provides a robust framework for decision-making in the media industry</p>
             <a href="https://github.com/Adityalolla04/Netflix-Release-Date-Optimization-for-Maximum-Viewership" target="_blank" rel="noopener noreferrer" className="view-project-btn">View Project</a>
           </div>
+          
           <div className="project-card">
-            <img src={HRChurnImage} alt="Breast Cancer Prediction Using Machine Learning" className="project-image" />
+            <img src={BreastCancer} alt="Breast Cancer Prediction Using Machine Learning" className="project-image" />
             <h3>Breast Cancer Prediction Using Machine Learning</h3>
             <p>This project demonstrates the application of logistic regression for predicting breast cancer diagnosis using the Breast Cancer Wisconsin dataset. 
               This model offers a robust approach to classifying tumors as malignant or benign based on critical tumor features.</p>
