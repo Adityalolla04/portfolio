@@ -54,7 +54,7 @@ const Navbar = () => {
           <a href="https://github.com/Adityalolla04" target="_blank" rel="noopener noreferrer" className="text-light">
             <FaGithub size={20} />
           </a>
-          <a href="https://linkedin.com/in/adityasrivatsav" target="_blank" rel="noopener noreferrer" className="text-light">
+          <a href="https://www.linkedin.com/in/aditya-srivatsav-lolla/" target="_blank" rel="noopener noreferrer" className="text-light">
             <FaLinkedin size={20} />
           </a>
           <button className="btn btn-outline-light" onClick={() => setDarkMode(!darkMode)}>

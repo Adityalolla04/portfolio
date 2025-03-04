@@ -234,7 +234,7 @@ const Home = () => {
   </div>
   <div className="contact-card">
     <FaLinkedin className="contact-icon" />
-    <p>LinkedIn: <a href="https://linkedin.com/in/adityasrivatsav" target="_blank" rel="noopener noreferrer">linkedin.com/in/adityasrivatsav</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/adityasrivatsav" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/aditya-srivatsav-lolla/</a></p>
   </div>
 </div>
 </section>
