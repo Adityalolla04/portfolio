@@ -8,8 +8,8 @@ import ProfileImage from "../assets/images/profile.jpg";
 import HRChurnImage from "../assets/images/HRChurn.png";
 import NetflixTitlesImage from "../assets/images/NetflixTitles.png";
 import BreastCancer from "../assets/images/BreastCancer.png";
-import BackgroundImage from "../assets/images/BackGround.jpg";
-import { FaEnvelope, FaLinkedin, FaPhone } from "react-icons/fa";
+import ProphetInventory from "../assets/images/ProphetInventory.png"
+import { FaEnvelope, FaLinkedin, FaMedium, FaPhone } from "react-icons/fa";
 
 const Home = () => {
 
@@ -45,7 +45,7 @@ const Home = () => {
     <h2 className="role-text">
       <Typewriter
         options={{
-          strings: ["Software Engineer", "Machine Learning Enthusiast"],
+          strings: ["Data Engineer", "Machine Learning Enthusiast"],
           autoStart: true,
           loop: true,
           delay: 75,
@@ -72,7 +72,7 @@ const Home = () => {
     <div className="about-right">
       <h3>Summary</h3>
       <p>
-      A Software Engineer and AI enthusiast with expertise in Big Data, ETL, and Machine Learning,focused on building scalable data pipelines 
+      A Data Engineer and AI enthusiast with expertise in Big Data, ETL, and Machine Learning,focused on building scalable data pipelines 
       and optimizing workflows. Proficient in Python, SQL, Spark, AWS, Azure, C#, and .NET Web API, with experience in cloud-based data solutions 
       and automation. Interested in AI-driven insights and real-world applications of data science, with a strong emphasis on continuous learning 
       and problem-solving.  
@@ -118,11 +118,11 @@ const Home = () => {
         <h2 className="section-title">Experience</h2>
         <div className="experience-grid">
           <div className="experience-card">
-            <h3>Software Engineer</h3>
+            <h3>Data Engineer</h3>
             <p><strong>Company:</strong> Evoke Technologies</p>
             <p><strong>Duration:</strong> Apr 2022 - Dec 2023</p>
             <ul>
-              <li>Led the development of UCC1 and UCC3 amendments for legal services at CSC Global, ensuring 100% on-time 
+              <li>Contributed to the development of UCC1 and UCC3 amendments for legal services at CSC Global, ensuring 100% on-time 
                 delivery through sprint planning and collaboration.</li>
               <li>Conducted data analysis using SQL, built data pipelines with Python, and implemented machine learning models, 
                 resolving 40+ defects and optimizing processes.</li>
@@ -162,46 +162,68 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Projects Section with View Project Button */}
-      <section id="projects" className="projects-section">
+{/* Projects Section with View Project & Medium Button */}
+<section id="projects" className={`projects-section`}>
         <h2 className="section-title">Projects</h2>
         <div className="projects-grid">
-          <div className="project-card">
-            <img src={InventoryDashboard} alt="Inventory Optimization" className="project-image" />
-            <h3>SmartStock AI powered inventory optimization and demand forecasting</h3>
-            <p>SmartStock is an AI-powered inventory management solution designed to optimize supply chain operations through accurate demand forecasting, 
-              dynamic inventory optimization, and automated defect detection. This end-to-end system integrates machine learning and computer vision to minimize costs, 
-              improve resource allocation, and enhance decision-making.
-            </p>
-            <a href="https://github.com/Adityalolla04/-SmartStock-AI-powered-inventory-optimization-and-demand-forecasting" target="_blank" rel="noopener noreferrer" className="view-project-btn">View Project</a>
-          </div>
-
-          <div className="project-card">
-            <img src={HRChurnImage} alt="HR Churn" className="project-image" />
-            <h3>End to End Project on HR Churn Data</h3>
-            <p>The aim of this project is to predict employee churn and evaluate satisfaction levels using machine learning techniques. 
-              By leveraging key organizational data, the project seeks to provide actionable insights to help HR departments mitigate turnover risks </p>
-            <a href="https://github.com/Adityalolla04/End-to-End-Project-on-HR-Churn-Data" target="_blank" rel="noopener noreferrer" className="view-project-btn">View Project</a>
-          </div>
-
-          <div className="project-card">
-            <img src={NetflixTitlesImage} alt="Netflix Titles" className="project-image" />
-            <h3>Netflix Release Date Optimization for Maximum Viewership</h3>
-            <p>The Netflix Release Date Optimization project demonstrates how data analytics and machine learning can help optimize the timing of content releases for maximum audience engagement. 
-              By identifying seasonal trends, popular genres, and predictive insights, this project provides a robust framework for decision-making in the media industry</p>
-            <a href="https://github.com/Adityalolla04/Netflix-Release-Date-Optimization-for-Maximum-Viewership" target="_blank" rel="noopener noreferrer" className="view-project-btn">View Project</a>
-          </div>
-          
-          <div className="project-card">
-            <img src={BreastCancer} alt="Breast Cancer Prediction Using Machine Learning" className="project-image" />
-            <h3>Breast Cancer Prediction Using Machine Learning</h3>
-            <p>This project demonstrates the application of logistic regression for predicting breast cancer diagnosis using the Breast Cancer Wisconsin dataset. 
-              This model offers a robust approach to classifying tumors as malignant or benign based on critical tumor features.</p>
-            <a href="https://github.com/Adityalolla04/Breast-Cancer-Prediction-Using-Machine-Learnings" target="_blank" rel="noopener noreferrer" className="view-project-btn">View Project</a>
-          </div>
+          {[
+            {
+              title: "SmartStock AI powered inventory optimization and demand forecasting",
+              description:
+                "SmartStock is an AI-powered inventory management solution designed to optimize supply chain operations through accurate demand forecasting, dynamic inventory optimization, and automated defect detection. This end-to-end system integrates machine learning and computer vision to minimize costs, improve resource allocation, and enhance decision-making.",
+              image: InventoryDashboard,
+              github: "https://github.com/Adityalolla04/-SmartStock-AI-powered-inventory-optimization-and-demand-forecasting",
+              medium: "https://medium.com/@aditya_smartstock",
+            },
+            {
+              title: "Prophet Inventory Forecasting Model Deployment on Google Cloud Platform(VertexAI)",
+              description:
+                "Efficient inventory management is a cornerstone of any retail business. Forecasting future demand accurately can significantly reduce stockouts,minimize overstock situations, and optimize supply chain operations. In this project, I developed and deployed an inventory forecasting model using the Prophet library on Google Cloud Platform (GCP) to predict future inventory requirements for an online retail dataset.",
+              image: ProphetInventory,
+              github: "https://github.com/Adityalolla04/Online-Retail-sales-Prediction-using-gcp-Vertex-AI",
+              medium: "https://medium.com/@ladityasrivatsav0405/prophet-inventory-forecasting-model-deployment-on-google-cloud-platform-f73b6ea830ee",
+            },
+            {
+              title: "End to End Project on HR Churn Data",
+              description:
+                "The aim of this project is to predict employee churn and evaluate satisfaction levels using ML techniques.",
+              image: HRChurnImage,
+              github: "https://github.com/Adityalolla04/End-to-End-Project-on-HR-Churn-Data",
+              medium: "https://medium.com/@aditya_hr_churn",
+            },
+            {
+              title: "Netflix Release Date Optimization for Maximum Viewership",
+              description:
+                "This project demonstrates how data analytics can optimize the timing of content releases for engagement.",
+              image: NetflixTitlesImage,
+              github: "https://github.com/Adityalolla04/Netflix-Release-Date-Optimization-for-Maximum-Viewership",
+              medium: "https://medium.com/@aditya_netflix",
+            },
+            {
+              title: "Breast Cancer Prediction Using Machine Learning",
+              description:
+                "This project applies logistic regression for predicting breast cancer diagnosis using the Breast Cancer Wisconsin dataset.",
+              image: BreastCancer,
+              github: "https://github.com/Adityalolla04/Breast-Cancer-Prediction-Using-Machine-Learnings",
+              medium: "https://medium.com/@aditya_breastcancer",
+            },
+          ].map((project, index) => (
+            <div className="project-card" key={index}>
+              <img src={project.image} alt={project.title} className="project-image" />
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="project-buttons">
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="view-project-btn">
+                  View Project
+                </a>
+                <a href={project.medium} target="_blank" rel="noopener noreferrer" className="medium-btn">
+                  <FaMedium size={18} /> Medium
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
-
       <section id="more-projects" className="more-projects-section">
   <h2 className="github-message" style={{ backgroundImage: "url('/assets/images/BackGround.jpg')" }}>
     For more projects, please visit <span className="github-highlight">GitHub</span>
@@ -238,6 +260,12 @@ const Home = () => {
   </div>
 </div>
 </section>
+
+{/* Footer Copyright */}
+<footer className="footer">
+  © {new Date().getFullYear()} Aditya Srivatsav. All rights reserved. | 
+  <a href="https://github.com/Adityalolla04" target="_blank" rel="noopener noreferrer"> GitHub</a>
+</footer>
 
     </>
   );

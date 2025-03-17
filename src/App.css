@@ -1,4 +1,4 @@
-/* General Styles */
+/* 🔹 General Styles */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #121212;
@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  scroll-behavior: smooth; /* Enables smooth scrolling */
+  scroll-behavior: smooth;
 }
 
 /* 🔹 Navbar */
@@ -76,7 +76,7 @@ body {
   margin-top: 10px;
 }
 
-/* 🔹 Sections */
+/* 🔹 Section Titles */
 .section-title {
   font-size: 2.5rem;
   text-align: center;
@@ -101,7 +101,6 @@ body {
   width: 100%;
 }
 
-/* 🔹 Left Side (Profile + Education) */
 .about-left {
   flex: 1;
   display: flex;
@@ -128,7 +127,6 @@ body {
   text-align: center;
 }
 
-/* 🔹 Right Side (Text-Only, No Cards) */
 .about-right {
   flex: 2;
   text-align: left;
@@ -141,6 +139,7 @@ body {
 }
 
 .about-right p {
+  text-align: justify;
   font-size: 1.1rem;
   margin-bottom: 15px;
 }
@@ -171,14 +170,6 @@ body {
   .about-content {
     flex-direction: column;
     text-align: center;
-  }
-
-  .about-left, .about-right {
-    width: 100%;
-  }
-
-  .about-right {
-    text-align: left;
   }
 }
 
@@ -215,20 +206,35 @@ body {
   padding: 60px;
 }
 
+/* 🔹 Three Cards Per Row */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px;
+}
+
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project-card {
   background: #1e1e1e;
   padding: 25px;
   border-radius: 12px;
-  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
   text-align: center;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card:hover {
@@ -238,55 +244,85 @@ body {
 
 .project-card img {
   width: 100%;
-  height: auto;
+  height: 180px;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
-.view-project-btn {
-  display: block;
+.project-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.project-card p {
+  text-align: justify;
+  font-size: 14px;
+  color: #ccc;
+  flex-grow: 1;
+}
+
+/* 🔹 Buttons */
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
   margin-top: 15px;
-  padding: 10px;
-  font-size: 1rem;
-  background: #f4a261;
-  color: white;
-  border-radius: 8px;
+}
+
+.view-project-btn, .medium-btn {
   text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
 }
 
-.view-project-btn:hover {
-  background: #d68b51;
+.view-project-btn {
+  background: #ff7f50;
+  color: white;
 }
 
-/* 🔹 More Projects Section */
+.medium-btn {
+  background: #000;
+  color: white;
+}
+
+/* 🔹 More Projects Section (GitHub) */
 .more-projects-section {
   text-align: center;
   padding: 60px 20px;
   background: url("../src/assets/images/BackGround.jpg") center/cover no-repeat;
-  background-size: cover; /* Ensures full width */
+  background-size: cover;
   background-position: center;
-  min-height: 350px;
+  min-height: 250px;
   width: 100%;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* 🔹 Heading Text */
 .github-message {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
   margin-bottom: 10px;
-}
-
-.github-highlight {
-  color: #f4a261; /* Orange for GitHub Highlight */
+  text-align: center;
 }
 
 /* 🔹 Subtext */
 .github-subtext {
   font-size: 1.2rem;
   color: #d3d3d3;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 /* 🔹 GitHub Button */
@@ -300,13 +336,13 @@ body {
   border-radius: 8px;
   text-decoration: none;
   transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  margin-top: 10px;
 }
 
 .github-button:hover {
   background: #d68b51;
   transform: scale(1.05);
 }
-
 
 /* 🔹 Contact Section */
 .contact-section {
@@ -361,4 +397,22 @@ section {
 section.fade-in {
   opacity: 1;
   transform: translateY(0);
+}
+/* 🔹 Footer Section */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #181818;
+  color: #d3d3d3;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.footer a {
+  color: #f4a261;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
