@@ -125,7 +125,7 @@ const Home = () => {
               <li>Contributed to the development of UCC1 and UCC3 amendments for legal services at CSC Global, ensuring 100% on-time 
                 delivery through sprint planning and collaboration.</li>
               <li>Conducted data analysis using SQL, built data pipelines with Python, and implemented machine learning models, 
-                resolving 40+ defects and optimizing processes.</li>
+                resolving more tha 40 defects and optimizing processes.</li>
               <li>Managed UCC1 and UCC3 migration from V2 to V3 in the .NET Core web application, ensuring a smooth transition.</li>
               <li>Developed UI features(Type Script) like Global Edit and Filter Types, improving platform stability by 70% and 
                 enhancing user satisfaction.</li>
@@ -173,7 +173,7 @@ const Home = () => {
                 "SmartStock is an AI-powered inventory management solution designed to optimize supply chain operations through accurate demand forecasting, dynamic inventory optimization, and automated defect detection. This end-to-end system integrates machine learning and computer vision to minimize costs, improve resource allocation, and enhance decision-making.",
               image: InventoryDashboard,
               github: "https://github.com/Adityalolla04/-SmartStock-AI-powered-inventory-optimization-and-demand-forecasting",
-              medium: "https://medium.com/@aditya_smartstock",
+              medium: "https://medium.com/@ladityasrivatsav0405/smartstock-ai-powered-inventory-optimization-and-demand-forecasting-c9f0b284bac6",
             },
             {
               title: "Prophet Inventory Forecasting Model Deployment on Google Cloud Platform(VertexAI)",
@@ -189,7 +189,7 @@ const Home = () => {
                 "The aim of this project is to predict employee churn and evaluate satisfaction levels using ML techniques.",
               image: HRChurnImage,
               github: "https://github.com/Adityalolla04/End-to-End-Project-on-HR-Churn-Data",
-              medium: "https://medium.com/@aditya_hr_churn",
+              medium: "https://medium.com/@ladityasrivatsav0405/employee-satisfaction-and-churn-prediction-2fb2d3741b61",
             },
             {
               title: "Netflix Release Date Optimization for Maximum Viewership",
@@ -197,15 +197,14 @@ const Home = () => {
                 "This project demonstrates how data analytics can optimize the timing of content releases for engagement.",
               image: NetflixTitlesImage,
               github: "https://github.com/Adityalolla04/Netflix-Release-Date-Optimization-for-Maximum-Viewership",
-              medium: "https://medium.com/@aditya_netflix",
+              medium: "https://medium.com/@ladityasrivatsav0405/optimizing-netflix-release-dates-with-machine-learning-e1f4962d56eb",
             },
             {
               title: "Breast Cancer Prediction Using Machine Learning",
               description:
                 "This project applies logistic regression for predicting breast cancer diagnosis using the Breast Cancer Wisconsin dataset.",
               image: BreastCancer,
-              github: "https://github.com/Adityalolla04/Breast-Cancer-Prediction-Using-Machine-Learnings",
-              medium: "https://medium.com/@aditya_breastcancer",
+              github: "https://github.com/Adityalolla04/Breast-Cancer-Prediction-Using-Machine-Learnings"
             },
           ].map((project, index) => (
             <div className="project-card" key={index}>
