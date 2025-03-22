@@ -8,7 +8,8 @@ import ProfileImage from "../assets/images/profile.jpg";
 import HRChurnImage from "../assets/images/HRChurn.png";
 import NetflixTitlesImage from "../assets/images/NetflixTitles.png";
 import BreastCancer from "../assets/images/BreastCancer.png";
-import ProphetInventory from "../assets/images/ProphetInventory.png"
+import ProphetInventory from "../assets/images/ProphetInventory.png";
+import Hospitallengthofstay from "../assets/images/hospitallengthofstay.png";
 import { FaEnvelope, FaLinkedin, FaMedium, FaPhone } from "react-icons/fa";
 
 const Home = () => {
@@ -167,6 +168,14 @@ const Home = () => {
         <h2 className="section-title">Projects</h2>
         <div className="projects-grid">
           {[
+            {
+              title: "Prediction of Hospital Length of stay in Medical Health Care and Assisstant Chatbot",
+              description:
+                "The Project is on the Hospital length of the stay using the RNN Techniques. Worked on the NLP of Comorbidities and Currently working on the chatbot",
+              image: Hospitallengthofstay,
+              github: "https://github.com/Adityalolla04/End-to-End-Project-on-Medical-Health-Care-Assisstant-with-Chatbot-",
+              medium: "",
+            },
             {
               title: "SmartStock AI powered inventory optimization and demand forecasting",
               description:
