@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.8d704d09.css",
-    "main.js": "/portfolio/static/js/main.3472e60d.js",
+    "main.js": "/portfolio/static/js/main.1f4e0784.js",
     "static/js/453.195098ae.chunk.js": "/portfolio/static/js/453.195098ae.chunk.js",
     "static/media/HRChurn.png": "/portfolio/static/media/HRChurn.0ec5c9901820e5a2a085.png",
     "static/media/InventoryDashboard.png": "/portfolio/static/media/InventoryDashboard.b53e159175e2d97ce902.png",
     "static/media/BreastCancer.png": "/portfolio/static/media/BreastCancer.5685f00e292c0634175d.png",
     "static/media/ProphetInventory.png": "/portfolio/static/media/ProphetInventory.57d8f9ffbabf34047c6d.png",
+    "static/media/hospitallengthofstay.png": "/portfolio/static/media/hospitallengthofstay.9947f71820d8f4a55e68.png",
     "static/media/BackGround.jpg": "/portfolio/static/media/BackGround.bf6ee0a9d34b9661640d.jpg",
     "static/media/NetflixTitles.png": "/portfolio/static/media/NetflixTitles.c754b3c7eb5edb21940e.png",
     "static/media/profile.jpg": "/portfolio/static/media/profile.6f2755d7baab90bf2d0e.jpg",
     "index.html": "/portfolio/index.html",
     "main.8d704d09.css.map": "/portfolio/static/css/main.8d704d09.css.map",
-    "main.3472e60d.js.map": "/portfolio/static/js/main.3472e60d.js.map",
+    "main.1f4e0784.js.map": "/portfolio/static/js/main.1f4e0784.js.map",
     "453.195098ae.chunk.js.map": "/portfolio/static/js/453.195098ae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8d704d09.css",
-    "static/js/main.3472e60d.js"
+    "static/js/main.1f4e0784.js"
   ]
 }
