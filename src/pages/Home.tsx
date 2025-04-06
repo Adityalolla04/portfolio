@@ -213,7 +213,7 @@ const Home = () => {
               description:
                 "This project applies logistic regression for predicting breast cancer diagnosis using the Breast Cancer Wisconsin dataset.",
               image: BreastCancer,
-              github: "https://github.com/Adityalolla04/Breast-Cancer-Prediction-Using-Machine-Learnings"
+              github: "https://github.com/Adityalolla04/Breast-Cancer-Prediction-Using-Machine-Learning"
             },
           ].map((project, index) => (
             <div className="project-card" key={index}>
