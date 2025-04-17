@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
 
         {/* Right Side Icons & Dark Mode Toggle */}
         <div className="d-flex align-items-center gap-3">
-          <a href="mailto:ladityasrivatsav0405@gmail.com" target="_blank" rel="noopener noreferrer">
+          <a href="mailto:laditya0405@gmail.com" target="_blank" rel="noopener noreferrer">
             <FaEnvelope size={22} color={iconColor} />
           </a>
           <a href="https://github.com/Adityalolla04" target="_blank" rel="noopener noreferrer">

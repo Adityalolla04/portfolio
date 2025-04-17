@@ -73,22 +73,26 @@ const Home = () => {
     <div className="about-right">
       <h3>Summary</h3>
       <p>
-      A Data Engineer and AI enthusiast with expertise in Big Data, ETL, and Machine Learning,focused on building scalable data pipelines 
-      and optimizing workflows. Proficient in Python, SQL, Spark, AWS, Azure, C#, and .NET Web API, with experience in cloud-based data solutions 
-      and automation. Interested in AI-driven insights and real-world applications of data science, with a strong emphasis on continuous learning 
-      and problem-solving.  
+      Data Engineer with over 3 years of experience in ETL pipeline development, cloud computing, and
+      machine learning. Expertise in developing data models, optimizing data workflows, and deploying
+      scalable solutions using AWS, GCP, and Azure platforms. Proven success in leveraging Python, SQL,
+      and big data technologies to enhance data accuracy, improve business performance, and streamline
+      data processes. Skilled in data visualization, predictive analytics, and ensuring data integrity.
+      Enthusiastic about contributing to innovative projects in data engineering and machine learning to
+      drive actionable insights and operational excellence.
       </p>
 
       <h3>Skills</h3>
       <ul className="bullet-list">
-    <li><strong>Programming Languages:</strong> Python, Java, SQL, C, C++, R, TypeScript</li>
-    <li><strong>Big Data Tools:</strong> Apache Spark, Hadoop, Splunk</li>
-    <li><strong>Scrum Management:</strong>Scrum Fundementals, Lean Six Sigma(Green-Belt)</li>
-    <li><strong>Frameworks & Libraries:</strong> Machine Learning Applications(Regression, classification, SVM, Neural Network, CNN), 
-    Matplotlib, NumPy, Pandas, TensorFlow, Keras, Scikit-learn, Streamlit</li>
-    <li><strong>DevOps Tools:</strong> Azure, Docker, Jenkins, Git, AWS</li>
-    <li><strong>Software Development Concepts:</strong> Object-Oriented Programming (OOP), Problem Solving</li>
-</ul>
+        <p>
+        ETL Pipeline Development, Machine Learning Models, Big Data Technologies (Hadoop, Spark), Cloud
+        Platforms (AWS, GCP, Azure), Data Integration, Data Governance, Data Warehousing, SQL & NoSQL
+        Databases, Data Analysis & Visualization, Data Pipelines Automation, Python Programming, Predictive
+        Analytics, Data Transformation, Agile Scrum Methodology, Data Quality Assurance, SQL Query
+        Optimization, Predictive Modeling, Data Science (TensorFlow, Scikit-learn), Business Intelligence
+        (Tableau, Power BI), Machine Learning Algorithms (XGBoost, Random Forest)
+        </p>
+      </ul>
 
 
       <h3>Languages Known</h3>
@@ -121,42 +125,55 @@ const Home = () => {
           <div className="experience-card">
             <h3>Data Engineer</h3>
             <p><strong>Company:</strong> Evoke Technologies</p>
+            <p><strong>Location:</strong> Hyderabad, India</p>
             <p><strong>Duration:</strong> Apr 2022 - Dec 2023</p>
             <ul>
-              <li>Contributed to the development of UCC1 and UCC3 amendments for legal services at CSC Global, ensuring 100% on-time 
-                delivery through sprint planning and collaboration.</li>
-              <li>Conducted data analysis using SQL, built data pipelines with Python, and implemented machine learning models, 
-                resolving more tha 40 defects and optimizing processes.</li>
-              <li>Managed UCC1 and UCC3 migration from V2 to V3 in the .NET Core web application, ensuring a smooth transition.</li>
-              <li>Developed UI features(Type Script) like Global Edit and Filter Types, improving platform stability by 70% and 
-                enhancing user satisfaction.</li>
-              <li>Provided solutions for production issues and on-call deployments, boosting business performance by 30%.</li>
-              <li>Optimized the deployment process, reducing update downtime by 20% through efficient coordination 
-                and issue resolution.</li>
+              <li>Developed ETL pipelines using Python and SQL, improving data processing and workflow efficiency by 40%.</li>
+              <li>Optimized machine learning models to enhance data analysis and forecasting, improving business decision-making.</li>
+              <li>Led data migration projects to AWS and GCP, improving data storage scalability and platform reliability by 30%.</li>
+              <li>Implemented automated data workflows using Python and SQL, reducing manual processing efforts by 50%.</li>
+              <li>Collaborated with cross-functional teams to integrate and deploy cloud-based solutions, streamlining platform functionality by 70%.</li>
+              <li>Created data visualization dashboards in Tableau and Power BI, enabling stakeholders to make data-driven decisions.</li>
+              <li>Enhanced data pipeline reliability by implementing data governance best practices, resulting in a 20% reduction in errors.</li>
+              <li>Worked in Agile teams, participating in scrum sprints and improving sprint efficiency and collaboration.</li>
+              <li><strong>Tools:</strong> Python, SQL, AWS, GCP, Tableau, Power BI, Machine Learning, ETL, Scrum</li>
             </ul>
+
 
           </div>
           <div className="experience-card">
-            <h3>Business Analyst</h3>
-            <p><strong>Company:</strong> Kannai Storage Solutions</p>
-            <p><strong>Duration:</strong> Aug 2021 - Mar 2022</p>
+            <h3>Data Analyst</h3>
+            <p><strong>Company:</strong> Certiview IT & Management Solutions Pvt Ltd</p>
+            <p><strong>Location:</strong> Hyderabad, India</p>
+            <p><strong>Duration:</strong> April 2021 - Mar 2022</p>
             <ul>
-              <li>Secured and managed business leads through cold calling and project management for Racking Systems, 
-                increasing sales efficiency by 70%.</li>
-              <li>Developed 35+ custom racking solutions using AutoCAD and SAP, and created 5+ Python and 
-                CNC programming scripts for automated racking systems,boosting sales performance by 50%.</li>
-            </ul>
+              <li>Developed predictive models using TensorFlow and Scikit-learn, improving business risk forecasts by 18%.</li>
+              <li>Built automated data pipelines for real-time ingestion into Google BigQuery and Snowflake, reducing manual effort by 70%.</li>
+              <li>Implemented indexing strategies to optimize SQL queries, reducing report generation time by 50%.</li>
+              <li>Created interactive dashboards using Power BI and Tableau, allowing business teams to define KPIs and analyze data insights efficiently.</li>
+              <li>Managed data quality assurance by implementing root-cause analysis and alerting systems, ensuring data pipeline integrity.</li>
+              <li>Used machine learning models to enhance data accuracy and forecast future trends, improving business outcomes by 20%.</li>
+              <li>Collaborated with data engineers to ensure that new data models were integrated into existing databases, improving overall system performance.</li>
+              <li><strong>Tools:</strong> SQL, Python, Power BI, Tableau, Google BigQuery, Snowflake, TensorFlow, Scikit-learn</li>
+          </ul>
+
 
           </div>
           <div className="experience-card">
-            <h3>Software Intern</h3>
-            <p><strong>Company:</strong> Workbot Pvt Ltd</p>
-            <p><strong>Duration:</strong> Jul 2020 - Jul 2021</p>
+            <h3>Data Analyst Intern</h3>
+            <p><strong>Company:</strong>Certiview IT & Management Solutions Pvt Ltd, Hyderabad </p>
+            <p><strong>Location:</strong> Hyderabad, India</p>
+            <p><strong>Duration:</strong> Jul 2020 - March 2021</p>
             <ul>
-              <li>Optimized SQL queries and ETL pipelines to enhance data processing for Chemical and Air Compressor manufacturing, 
-                improving efficiency by 40% and reducing query execution time by 25%.</li>
-              <li>Applied Six Sigma methodologies to identify and eliminate inefficiencies in manufacturing processes, 
-                reducing material waste by 15%.</li>
+              <li>Developed ETL scripts in SQL and Python, reducing data cleaning time by 40%.</li>
+              <li>Standardized and cleaned data, improving data accuracy by 30% through data imputation techniques.</li>
+              <li>Built interactive dashboards using Power BI and Tableau, improving decision-making speed by 35%.</li>
+              <li>Optimized data pipelines for enhanced data transformation and loading efficiency.</li>
+              <li>Worked with machine learning algorithms to analyze and predict trends from large datasets.</li>
+              <li>Documented all processes and workflows, ensuring smooth onboarding for new team members and reducing operational gaps.</li>
+              <li>Collaborated with senior data analysts to identify and troubleshoot 
+                  data-related issues.</li>
+              <li><strong>Tools:</strong> SQL, Python, Power BI, Tableau, Pandas, Scikit-learn</li>
             </ul>
 
           </div>
@@ -173,8 +190,7 @@ const Home = () => {
               description:
                 "The Project is on the Hospital length of the stay using the RNN Techniques. Worked on the NLP of Comorbidities and Currently working on the chatbot",
               image: Hospitallengthofstay,
-              github: "https://github.com/Adityalolla04/End-to-End-Project-on-Medical-Health-Care-Assisstant-with-Chatbot-",
-              medium: "",
+              github: "https://github.com/Adityalolla04/End-to-End-Project-on-Medical-Health-Care-Assisstant-with-Chatbot-"
             },
             {
               title: "SmartStock AI powered inventory optimization and demand forecasting",
@@ -213,7 +229,8 @@ const Home = () => {
               description:
                 "This project applies logistic regression for predicting breast cancer diagnosis using the Breast Cancer Wisconsin dataset.",
               image: BreastCancer,
-              github: "https://github.com/Adityalolla04/Breast-Cancer-Prediction-Using-Machine-Learnings"
+              github: "https://github.com/Adityalolla04/Breast-Cancer-Prediction-Using-Machine-Learning",
+              medium: "https://medium.com/@ladityasrivatsav0405/predicting-breast-cancer-with-96-5-accuracy-using-logistic-regression-05357127d090"
             },
           ].map((project, index) => (
             <div className="project-card" key={index}>
@@ -256,7 +273,7 @@ const Home = () => {
 <div className="contact-grid">
   <div className="contact-card">
     <FaEnvelope className="contact-icon" />
-    <p>Email: <a href="mailto:ladityasrivatsav0405@gmail.com">ladityasrivatsav0405@gmail.com</a></p>
+    <p>Email: <a href="mailto:ladityasrivatsav0405@gmail.com">laditya0405@gmail.com</a></p>
   </div>
   <div className="contact-card">
     <FaPhone className="contact-icon" />
