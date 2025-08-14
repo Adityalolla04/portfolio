@@ -2,6 +2,10 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github, BookOpen } from 'lucide-react';
+import healthcareAi from '@/assets/healthcare-ai.jpg';
+import smartstockAi from '@/assets/smartstock-ai.jpg';
+import prophetForecast from '@/assets/prophet-forecast.jpg';
+import britishAirwaysDashboard from '@/assets/british-airways-dashboard.jpg';
 import projectBg from '@/assets/project-bg.jpg';
 
 const Projects = () => {
@@ -9,7 +13,7 @@ const Projects = () => {
     {
       title: "Hospital Length of Stay Prediction & Healthcare Assistant Chatbot",
       description: "End-to-end ML project using RNN techniques for predicting hospital length of stay with NLP processing of comorbidities and intelligent healthcare chatbot integration.",
-      image: projectBg,
+      image: healthcareAi,
       technologies: ["Python", "TensorFlow", "RNN", "NLP", "Healthcare AI", "Deep Learning"],
       github: "https://github.com/Adityalolla04/End-to-End-Project-on-Medical-Health-Care-Assisstant-with-Chatbot-",
       demo: "",
@@ -18,24 +22,32 @@ const Projects = () => {
     },
     {
       title: "SmartStock: AI-Powered Inventory Optimization",
-      description: "Comprehensive AI solution for supply chain optimization featuring demand forecasting, dynamic inventory management, and automated defect detection using computer vision.",
-      image: projectBg,
-      technologies: ["Python", "Machine Learning", "Computer Vision", "Supply Chain", "Forecasting"],
+      description: "Comprehensive AI solution for supply chain optimization featuring demand forecasting, dynamic inventory management, and automated defect detection using CNN computer vision models.",
+      image: smartstockAi,
+      technologies: ["Python", "CNN", "Computer Vision", "Supply Chain", "Defect Detection", "Machine Learning"],
       github: "https://github.com/Adityalolla04/-SmartStock-AI-powered-inventory-optimization-and-demand-forecasting",
       demo: "",
-      medium: "https://medium.com/@ladityasrivatsav0405/smartstock-ai-powered-inventory-optimization-and-demand-forecasting-c9f0b284bac6",
       category: "Business Intelligence",
       featured: true
     },
     {
       title: "Prophet Inventory Forecasting on GCP VertexAI",
       description: "Scalable inventory forecasting solution deployed on Google Cloud Platform using Prophet library for accurate demand prediction in retail environments.",
-      image: projectBg,
+      image: prophetForecast,
       technologies: ["Prophet", "Google Cloud", "VertexAI", "Time Series", "Retail Analytics"],
       github: "https://github.com/Adityalolla04/Online-Retail-sales-Prediction-using-gcp-Vertex-AI",
       demo: "",
-      medium: "https://medium.com/@ladityasrivatsav0405/prophet-inventory-forecasting-model-deployment-on-google-cloud-platform-f73b6ea830ee",
       category: "Cloud Computing",
+      featured: true
+    },
+    {
+      title: "British Airways Review Dashboard",
+      description: "A comprehensive Tableau dashboard exploring British Airways passenger reviews (Mar 2016 – Oct 2023) to reveal rating trends, geographic sentiment, and aircraft-specific performance with interactive filtering capabilities.",
+      image: britishAirwaysDashboard,
+      technologies: ["Tableau", "Data Visualization", "Business Intelligence", "Customer Analytics", "Dashboard Design"],
+      github: "https://github.com/Adityalolla04/British-Airways-Review-Dashboard",
+      demo: "",
+      category: "Data Visualization",
       featured: true
     },
     {

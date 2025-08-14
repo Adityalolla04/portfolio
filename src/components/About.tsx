@@ -92,7 +92,7 @@ const About = () => {
                   <p className="text-sm text-muted-foreground">Years Experience</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-accent">50+</p>
+                  <p className="text-2xl font-bold text-accent">10+</p>
                   <p className="text-sm text-muted-foreground">Projects Completed</p>
                 </div>
               </div>

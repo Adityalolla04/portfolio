@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, Clock } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [currentTime, setCurrentTime] = useState(new Date());
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,6 +13,13 @@ const Header = () => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+    return () => clearInterval(timer);
   }, []);
 
   const scrollToSection = (id: string) => {
@@ -42,8 +50,16 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Social Links */}
+          {/* Time Display & Social Links */}
           <div className="hidden md:flex items-center space-x-4">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <Clock className="h-4 w-4" />
+              {currentTime.toLocaleTimeString('en-US', { 
+                hour: '2-digit', 
+                minute: '2-digit',
+                second: '2-digit'
+              })}
+            </div>
             <Button variant="ghost" size="icon" asChild>
               <a href="https://github.com/Adityalolla04" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />

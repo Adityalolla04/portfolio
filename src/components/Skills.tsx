@@ -28,7 +28,7 @@ const Skills = () => {
     {
       title: "Cloud Platforms",
       icon: Cloud,
-      skills: ["AWS", "Google Cloud Platform", "Microsoft Azure", "Snowflake", "BigQuery"],
+      skills: ["AWS", "Google Cloud Platform", "Azure Databricks", "Snowflake", "BigQuery"],
       color: "text-primary"
     },
     {
