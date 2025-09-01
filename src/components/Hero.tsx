@@ -59,12 +59,12 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="group glass-card hover-glow"
-              asChild
+              onClick={() => scrollToSection('contact')}
             >
-              <a href="/resume.pdf" download>
-                <Download className="h-4 w-4 mr-2 group-hover:translate-y-1 transition-transform" />
-                Download Resume
-              </a>
+              <span className="flex items-center gap-2">
+                Get In Touch
+                <ChevronDown className="h-4 w-4 group-hover:translate-y-1 transition-transform" />
+              </span>
             </Button>
           </div>
         </div>

@@ -17,21 +17,21 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "laditya0405@gmail.com",
-      href: "mailto:laditya0405@gmail.com",
+      value: "adilolla0405@gmail.com",
+      href: "mailto:adilolla0405@gmail.com",
       color: "text-primary"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 716-463-9524",
+      value: "+1 (716) 463-9524",
       href: "tel:+17164639524",
       color: "text-accent"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Buffalo, NY",
+      value: "Plano, TX",
       href: "",
       color: "text-primary"
     }
@@ -141,16 +141,9 @@ const Contact = () => {
 
               <div className="space-y-4">
                 <Button size="lg" className="w-full hover-glow group" asChild>
-                  <a href="mailto:laditya0405@gmail.com?subject=Data Project Collaboration">
+                  <a href="mailto:adilolla0405@gmail.com?subject=Data Project Collaboration">
                     <Send className="h-5 w-5 mr-2 group-hover:translate-x-1 transition-transform" />
                     Send me an Email
-                  </a>
-                </Button>
-                
-                <Button variant="outline" size="lg" className="w-full glass-card hover-glow group" asChild>
-                  <a href="/resume.pdf" download>
-                    <Download className="h-5 w-5 mr-2 group-hover:translate-y-1 transition-transform" />
-                    Download Resume
                   </a>
                 </Button>
               </div>
@@ -167,7 +160,7 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">Location</span>
-                  <Badge variant="outline">Remote / Buffalo, NY</Badge>
+                  <Badge variant="outline">Remote / Plano, TX</Badge>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">Response Time</span>

@@ -19,16 +19,21 @@ const About = () => {
           {/* Text Content */}
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
-              Data Engineer with over <span className="text-primary font-semibold">3 years of experience</span> in 
-              ETL pipeline development, cloud computing, and machine learning. I specialize in developing 
-              data models, optimizing workflows, and deploying scalable solutions using 
-              <span className="text-accent font-semibold"> AWS, GCP, and Azure</span> platforms.
+              A results-driven <span className="text-primary font-semibold">Data Engineer</span> with hands-on experience designing and optimizing 
+              large-scale data pipelines, real-time streaming solutions, and cloud-native architectures across industries 
+              such as <span className="text-accent font-semibold">legal tech, manufacturing, and storage solutions</span>.
             </p>
             
             <p className="text-lg leading-relaxed">
-              My expertise lies in leveraging <span className="text-primary font-semibold">Python, SQL, and big data technologies</span> to 
-              enhance data accuracy, improve business performance, and streamline data processes. 
-              I'm enthusiastic about contributing to innovative projects that drive actionable insights and operational excellence.
+              Skilled in <span className="text-primary font-semibold">Python, SQL, and modern ETL tools</span>, I have built end-to-end workflows 
+              leveraging Apache Spark, Kafka, Airflow, and AWS services to deliver clean, reliable, and business-ready data. 
+              I bring a track record of <span className="text-accent font-semibold">improving efficiency—reducing reporting cycles by 40%, 
+              boosting data accuracy by 60%</span>, and enhancing compliance checks with predictive models.
+            </p>
+            
+            <p className="text-lg leading-relaxed">
+              With a blend of technical expertise and problem-solving mindset, I thrive on turning complex data challenges 
+              into actionable insights through BI dashboards, predictive analytics, and automation that empower decision-making.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
@@ -48,7 +53,7 @@ const About = () => {
                   <MapPin className="h-6 w-6 text-accent" />
                   <div>
                     <p className="font-semibold">Location</p>
-                    <p className="text-sm text-muted-foreground">United States</p>
+                    <p className="text-sm text-muted-foreground">Plano, TX</p>
                     <p className="text-sm text-muted-foreground">Open to Remote Work</p>
                   </div>
                 </div>
