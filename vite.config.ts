@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'development' ? '/' : '/portfolio/',
+  base: '/portfolio/',
   server: {
     host: "localhost",
     port: 8080,
@@ -14,6 +14,19 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name === 'favicon.ico') {
+            return '[name][extname]';
+          }
+          return 'assets/[name][extname]';
+        },
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+      },
+    },
   },
   plugins: [
     react()
