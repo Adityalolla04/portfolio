@@ -1,13 +1,15 @@
+/// <reference types="node" />
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import path from "path";
-import { componentTagger } from "lovable-tagger";
+import * as path from "node:path";
+import { fileURLToPath } from "node:url";
 
-// https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+export default defineConfig({
   base: '/portfolio/',
   server: {
-    host: "::",
+    host: "localhost",
     port: 8080,
     open: true
   },
@@ -19,23 +21,22 @@ export default defineConfig(({ mode }) => ({
       output: {
         manualChunks: undefined,
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name === 'favicon.ico') {
+          if (assetInfo.name && /favicon\.ico$/.test(assetInfo.name)) {
             return '[name][extname]';
           }
-          return 'assets/[name][extname]';
+          return 'assets/[name]-[hash][extname]';
         },
-        entryFileNames: 'assets/[name].js',
-        chunkFileNames: 'assets/[name].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: 'assets/[name]-[hash].js',
       },
     },
   },
   plugins: [
-    react(),
-    mode === 'development' && componentTagger(),
-  ].filter(Boolean),
+    react()
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}));
+});
