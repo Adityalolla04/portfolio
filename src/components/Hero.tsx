@@ -27,20 +27,19 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
             Hi, I'm{' '}
-            <span className="gradient-text">Aditya Srivatsav</span>
+            <span className="gradient-text">Aditya Srivatsav Lolla</span>
           </h1>
           
           <div className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground mb-8 animate-slide-up">
-            <span className="text-primary font-semibold">Data Engineer</span> | 
-            <span className="text-accent font-semibold"> Data Scientist</span>
+            <span className="text-primary font-semibold">.NET Full-Stack Engineer</span>
           </div>
           
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed animate-slide-up">
-            Transforming raw data into actionable insights with{' '}
-            <span className="text-primary font-semibold">3+ years</span> of experience in 
-            ETL pipeline development, machine learning, and cloud computing. 
-            Currently pursuing <span className="text-accent font-semibold">Master's in Data Science</span> at 
-            University at Buffalo.
+            Building secure, high-performance <span className="text-primary font-semibold">ASP.NET Core</span> solutions with{' '}
+            <span className="text-accent font-semibold">3+ years</span> of experience in 
+            Web APIs, MVC applications, and TypeScript UIs backed by SQL Server and PostgreSQL. 
+            Currently pursuing <span className="text-primary font-semibold">Master's in Computer Science</span> at 
+            SUNY University at Buffalo.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up">
