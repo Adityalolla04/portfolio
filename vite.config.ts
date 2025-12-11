@@ -3,15 +3,15 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
+import { componentTagger } from "lovable-tagger";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   base: '/portfolio/',
   server: {
-    host: "localhost",
+    host: "::",
     port: 8080,
-    open: true
   },
   build: {
     outDir: 'dist',
@@ -35,11 +35,12 @@ export default defineConfig({
     },
   },
   plugins: [
-    react()
-  ],
+    react(),
+    mode === 'development' && componentTagger(),
+  ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-});
+}));
