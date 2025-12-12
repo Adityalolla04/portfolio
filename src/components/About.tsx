@@ -1,8 +1,14 @@
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { GraduationCap, MapPin, Languages, Award } from 'lucide-react';
+import { GraduationCap, MapPin, Languages, Award, Briefcase, Code2 } from 'lucide-react';
 
 const About = () => {
+  const certifications = [
+    "AWS Certified Data Engineer – Associate",
+    "Azure Certified Developer Associate",
+    "Microsoft Azure Fundamentals"
+  ];
+
   return (
     <section id="about" className="section-padding bg-secondary/20">
       <div className="max-w-6xl mx-auto">
@@ -15,18 +21,19 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Text Content */}
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
-              A results-driven <span className="text-primary font-semibold">.NET Full-Stack Engineer</span> with 3+ years designing and delivering 
-              secure, high-performance ASP.NET Core solutions—end-to-end Web APIs, MVC applications, and TypeScript UIs backed by 
-              <span className="text-accent font-semibold"> SQL Server and PostgreSQL</span> for legal tech and financial services.
+              A results-driven <span className="text-primary font-semibold">Full-Stack Engineer</span> with 3+ years designing and delivering 
+              secure, high-performance <span className="text-accent font-semibold">Python, FastAPI, ASP.NET Core</span> solutions—end-to-end Web APIs, 
+              TypeScript UIs backed by SQL Server, PostgreSQL, and NoSQL for legal tech and financial services.
             </p>
             
             <p className="text-lg leading-relaxed">
-              Skilled in <span className="text-primary font-semibold">C#, .NET 8, EF Core, LINQ, Dependency Injection</span>, JWT/OIDC, Swagger, 
-              and CI/CD with Git and Jenkins. I build clean, versioned APIs and intuitive UI flows that integrate seamlessly with enterprise systems.
+              Skilled in <span className="text-primary font-semibold">Data Analysis, Machine Learning, LangChain, Azure OpenAI</span>, 
+              JWT/OIDC, Swagger, and CI/CD with Git and Jenkins. I build clean, versioned APIs and intuitive UI flows that 
+              integrate seamlessly with enterprise systems.
             </p>
             
             <p className="text-lg leading-relaxed">
@@ -38,7 +45,7 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
               <Card className="glass-card hover-glow p-4">
                 <div className="flex items-center gap-3">
-                  <GraduationCap className="h-6 w-6 text-primary" />
+                  <GraduationCap className="h-6 w-6 text-primary flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Education</p>
                     <p className="text-sm text-muted-foreground">M.S. in Computer Science</p>
@@ -49,7 +56,7 @@ const About = () => {
 
               <Card className="glass-card hover-glow p-4">
                 <div className="flex items-center gap-3">
-                  <MapPin className="h-6 w-6 text-accent" />
+                  <MapPin className="h-6 w-6 text-accent flex-shrink-0" />
                   <div>
                     <p className="font-semibold">Location</p>
                     <p className="text-sm text-muted-foreground">Plano, TX</p>
@@ -68,15 +75,35 @@ const About = () => {
                 <h3 className="text-xl font-semibold">Certifications</h3>
               </div>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">Azure Certified Developer Associate</Badge>
-                <Badge variant="secondary">Microsoft Azure Fundamentals</Badge>
-                <Badge variant="outline">.NET Web API</Badge>
+                {certifications.map((cert) => (
+                  <Badge key={cert} variant="secondary" className="text-sm">
+                    {cert}
+                  </Badge>
+                ))}
               </div>
             </Card>
 
             <Card className="glass-card hover-glow p-6">
               <div className="flex items-center gap-3 mb-4">
-                <Languages className="h-6 w-6 text-accent" />
+                <Code2 className="h-6 w-6 text-accent" />
+                <h3 className="text-xl font-semibold">Core Tech Stack</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="outline">Python</Badge>
+                <Badge variant="outline">FastAPI</Badge>
+                <Badge variant="outline">C#</Badge>
+                <Badge variant="outline">ASP.NET Core</Badge>
+                <Badge variant="outline">TypeScript</Badge>
+                <Badge variant="outline">React</Badge>
+                <Badge variant="outline">Angular</Badge>
+                <Badge variant="outline">SQL Server</Badge>
+                <Badge variant="outline">PostgreSQL</Badge>
+              </div>
+            </Card>
+
+            <Card className="glass-card hover-glow p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Languages className="h-6 w-6 text-primary" />
                 <h3 className="text-xl font-semibold">Languages</h3>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -101,8 +128,8 @@ const About = () => {
                 <p className="text-sm text-muted-foreground">Triage Time Reduced</p>
               </Card>
               <Card className="glass-card hover-glow p-4 text-center">
-                <p className="text-3xl font-bold gradient-text">100%</p>
-                <p className="text-sm text-muted-foreground">On-Time Delivery</p>
+                <p className="text-3xl font-bold gradient-text">25%</p>
+                <p className="text-sm text-muted-foreground">Relevance Improvement</p>
               </Card>
             </div>
           </div>

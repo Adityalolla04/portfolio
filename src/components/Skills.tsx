@@ -8,7 +8,9 @@ import {
   Code2, 
   Wrench,
   Brain,
-  Server
+  Server,
+  Shield,
+  Settings
 } from 'lucide-react';
 
 const Skills = () => {
@@ -16,74 +18,107 @@ const Skills = () => {
     {
       title: "Programming & Scripting",
       icon: Code2,
-      skills: ["Python", "C#", "MATLAB"],
+      skills: ["C#", "Python", "NumPy", "Pandas", "OOPS", "T-SQL", "TypeScript", "HTML5", "CSS3", "Bash/PowerShell"],
       color: "text-primary"
     },
     {
-      title: "Data Engineering & ETL", 
+      title: "Runtime & Frameworks", 
       icon: Server,
       skills: [
-        "Apache Airflow", "Prefect", "dbt", "PySpark", "Databricks (Delta Lake, Unity Catalog, Delta Live Tables)", 
-        "AWS Glue", "SSIS", "Informatica", "CI/CD pipelines", "Spark Structured Streaming", "Kafka Connect"
+        "REST API", "ASP.NET Core Web API", "FastAPI", "SQLAlchemy", "EF Core", 
+        "Migrations", "Indexing", "Node.js", "React", "Angular"
       ],
       color: "text-accent"
     },
     {
-      title: "API & Testing",
-      icon: Wrench, 
+      title: "LLM & AI/ML",
+      icon: Brain, 
       skills: [
-        "ASP.NET Core", "Web API (REST/GraphQL)", "Swagger/OpenAPI", "Dependency Injection", 
-        "Postman", "Unit/Integration Testing (xUnit/pytest)", "Data Contracts", "Solr"
+        "LangChain", "Azure OpenAI", "OpenAI API", "pgvector", "FAISS", "RAG",
+        "Machine Learning", "Predictive Modeling", "CNN", "LSTM", "RNN", "Data Science"
       ],
       color: "text-primary"
     },
     {
-      title: "Databases & Warehousing",
+      title: "Data Analysis & Analytics",
+      icon: BarChart3,
+      skills: [
+        "Data Analysis", "Data Analytics", "Statistical Analysis", "NumPy", "Pandas", 
+        "Data Visualization", "Tableau", "Power BI", "Streamlit", "SSRS", "Business Intelligence"
+      ],
+      color: "text-accent"
+    },
+    {
+      title: "Databases",
       icon: Database,
       skills: [
-        "SQL Server", "PostgreSQL", "Snowflake (Snowpipe, Streams & Tasks, Time Travel)", 
-        "Amazon Redshift (Spectrum, RA3)", "MongoDB", "Cassandra", "NoSQL"
-      ],
-      color: "text-accent"
-    },
-    {
-      title: "Big Data & Streaming",
-      icon: Cpu,
-      skills: [
-        "Apache Spark", "Apache Kafka (Schema Registry)", "AWS EMR", "Hadoop", 
-        "Amazon Kinesis (Streams/Firehose)", "File/Message Formats"
+        "SQL Server", "PostgreSQL", "MongoDB", "Transactions", "Views", "XML Format", 
+        "Joins", "Indexers", "Stored Procedures", "NoSQL"
       ],
       color: "text-primary"
     },
     {
-      title: "Cloud & DevOps",
+      title: "Security & Identity",
+      icon: Shield,
+      skills: [
+        "JWT Auth", "Role-based Authorization", "OAuth2/OIDC", "Azure AD", 
+        "CORS", "CSRF", "HTTPS/TLS Hardening", "OWASP Practices"
+      ],
+      color: "text-accent"
+    },
+    {
+      title: "APIs & Contracts",
+      icon: Wrench,
+      skills: [
+        "REST API", "JSON", "Swagger", "API Versioning", "OpenAPI", 
+        "Apache Solr Indexer", "Schema and Field Types"
+      ],
+      color: "text-primary"
+    },
+    {
+      title: "Architecture & Patterns",
+      icon: Settings,
+      skills: [
+        "SOLID", "Clean Architecture", "Repository Pattern", "Unit of Work", 
+        "DTOs vs Entities", "CQRS/MediatR", "Design Patterns", "Event-driven"
+      ],
+      color: "text-accent"
+    },
+    {
+      title: "CI/CD & DevOps",
       icon: Cloud,
       skills: [
-        "AWS (S3, Lambda, Glue, Redshift, EMR, EC2, CloudWatch, SNS, Lake Formation, KMS, IAM/RBAC)", 
-        "Docker", "Kubernetes", "Terraform", "Git", "GitHub Actions"
+        "Git", "GitHub", "Jenkins", "GitHub Actions", "Docker", "Kubernetes", 
+        "Azure", "Azure Service Bus", "MSBuild", "Artifacts"
       ],
-      color: "text-accent"
-    },
-    {
-      title: "Data Visualization & BI",
-      icon: BarChart3,
-      skills: ["Tableau", "Power BI", "Streamlit", "SSRS"],
       color: "text-primary"
     },
     {
-      title: "Data Governance & Monitoring",
-      icon: Server,
+      title: "Testing & Quality",
+      icon: Cpu,
       skills: [
-        "Apache Atlas", "Great Expectations", "OpenLineage/Marquez", 
-        "Prometheus", "Grafana", "Datadog", "Splunk"
+        "xUnit", "NUnit", "pytest", "Test Server", "Postman/Newman", 
+        "CI-gated Test Pipelines", "Unit Testing", "Integration Testing"
       ],
       color: "text-accent"
     },
     {
-      title: "ML & Analytics",
-      icon: Brain,
-      skills: ["Predictive Modeling", "CNN", "LSTM", "RNN", "Compliance Models"],
+      title: "Observability & Diagnostics",
+      icon: BarChart3,
+      skills: [
+        "Splunk", "Health Checks", "ILogger", "Request/Response Logging",
+        "SLO Dashboards", "Structured Logging"
+      ],
       color: "text-primary"
+    },
+    {
+      title: "Tools & Process",
+      icon: Wrench,
+      skills: [
+        "Visual Studio", "VS Code", "SSMS", "pgAdmin", "Postman", "Swagger UI",
+        "Agile/Scrum", "User Stories", "Sprint Planning", "Code Reviews"
+      ],
+      color: "text-accent"
     }
   ];
 
@@ -95,7 +130,7 @@ const Skills = () => {
             Technical <span className="gradient-text">Skills</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive expertise across the modern data engineering stack with hands-on experience in production environments
+            Comprehensive expertise across full-stack development, AI/ML integration, and data analytics in production environments
           </p>
         </div>
 
@@ -137,11 +172,11 @@ const Skills = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="glass-card hover-glow p-6 text-center">
               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Database className="h-6 w-6 text-primary" />
+                <Code2 className="h-6 w-6 text-primary" />
               </div>
-              <h4 className="font-semibold mb-2">ETL Pipeline Development</h4>
+              <h4 className="font-semibold mb-2">Full-Stack Development</h4>
               <p className="text-sm text-muted-foreground">
-                Designed automated ingestion pipelines reducing manual processes and improving data accuracy by 60%
+                End-to-end Web APIs, FastAPI, ASP.NET Core with Angular/React UIs, reducing triage time by 40%
               </p>
             </Card>
 
@@ -149,9 +184,9 @@ const Skills = () => {
               <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Brain className="h-6 w-6 text-accent" />
               </div>
-              <h4 className="font-semibold mb-2">Machine Learning & Analytics</h4>
+              <h4 className="font-semibold mb-2">AI/ML & Data Analysis</h4>
               <p className="text-sm text-muted-foreground">
-                Built predictive compliance models and CNN-based defect detection systems with measurable impact
+                LangChain, Azure OpenAI, RAG systems with vector databases improving search relevance by 25%
               </p>
             </Card>
 
@@ -159,9 +194,9 @@ const Skills = () => {
               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Cloud className="h-6 w-6 text-primary" />
               </div>
-              <h4 className="font-semibold mb-2">Cloud Architecture</h4>
+              <h4 className="font-semibold mb-2">Cloud & DevOps</h4>
               <p className="text-sm text-muted-foreground">
-                Deployed scalable solutions on AWS with real-time streaming, achieving 40% reduction in reporting cycles
+                Azure, Docker, Kubernetes with CI/CD pipelines reducing deployment downtime by 30%
               </p>
             </Card>
           </div>
