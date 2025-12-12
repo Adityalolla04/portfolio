@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ChevronDown, ExternalLink, Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -8,105 +8,144 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-primary/10 rounded-full animate-float blur-3xl"></div>
-        <div className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-accent/10 rounded-full animate-float blur-3xl" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-primary/5 rounded-full animate-float blur-2xl" style={{ animationDelay: '4s' }}></div>
+      {/* Animated Background Blobs */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div 
+          className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full animate-float opacity-30"
+          style={{ 
+            background: 'radial-gradient(circle, hsl(263, 70%, 58%) 0%, transparent 70%)',
+            filter: 'blur(60px)',
+            animationDelay: '0s'
+          }}
+        />
+        <div 
+          className="absolute bottom-1/4 left-1/4 w-80 h-80 rounded-full animate-float opacity-20"
+          style={{ 
+            background: 'radial-gradient(circle, hsl(199, 89%, 48%) 0%, transparent 70%)',
+            filter: 'blur(50px)',
+            animationDelay: '2s'
+          }}
+        />
+        <div 
+          className="absolute top-1/2 left-1/2 w-64 h-64 rounded-full animate-float opacity-25"
+          style={{ 
+            background: 'radial-gradient(circle, hsl(280, 70%, 50%) 0%, transparent 70%)',
+            filter: 'blur(40px)',
+            animationDelay: '4s'
+          }}
+        />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-        <div className="animate-fade-in">
-          {/* Greeting */}
-          <p className="text-lg sm:text-xl text-primary font-medium mb-4 tracking-wide">
-            Hello, I'm
-          </p>
-          
-          <h1 className="text-5xl sm:text-6xl lg:text-8xl font-bold mb-6 tracking-tight">
-            <span className="gradient-text">Aditya Srivatsav Lolla</span>
-          </h1>
-          
-          <div className="text-2xl sm:text-3xl lg:text-4xl text-foreground font-medium mb-8 animate-slide-up">
-            <span className="text-muted-foreground">Full-Stack </span>
-            <span className="text-primary">Software Engineer</span>
-          </div>
-          
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            3+ years building secure, high-performance{' '}
-            <span className="text-primary font-medium">Python</span>,{' '}
-            <span className="text-primary font-medium">FastAPI</span>,{' '}
-            <span className="text-primary font-medium">ASP.NET Core</span> solutions with{' '}
-            <span className="text-accent font-medium">ML/AI integration</span> and{' '}
-            <span className="text-accent font-medium">Data Analytics</span> expertise.
-          </p>
+      {/* Main Content */}
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Side - Text Content */}
+          <div className="text-left space-y-6">
+            {/* Greeting with Wave */}
+            <div className="flex items-center gap-3 text-2xl sm:text-3xl">
+              <span className="wave-emoji text-4xl">👋</span>
+              <span className="text-foreground font-medium">Hello!</span>
+            </div>
 
-          {/* Social Links */}
-          <div className="flex justify-center gap-4 mb-12 animate-slide-up" style={{ animationDelay: '0.3s' }}>
-            <a 
-              href="mailto:adilolla0405@gmail.com"
-              className="p-3 rounded-full glass-card hover-glow transition-all duration-300 hover:scale-110"
-              aria-label="Email"
-            >
-              <Mail className="h-5 w-5 text-foreground" />
-            </a>
-            <a 
-              href="https://github.com/Adityalolla04"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full glass-card hover-glow transition-all duration-300 hover:scale-110"
-              aria-label="GitHub"
-            >
-              <Github className="h-5 w-5 text-foreground" />
-            </a>
-            <a 
-              href="https://linkedin.com/in/adityalolla"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 rounded-full glass-card hover-glow transition-all duration-300 hover:scale-110"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="h-5 w-5 text-foreground" />
-            </a>
+            {/* Name */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+              I'm{' '}
+              <span className="text-gradient-animate">Aditya Srivatsav Lolla</span>
+            </h1>
+
+            {/* Title */}
+            <p className="text-xl sm:text-2xl text-muted-foreground">
+              A passionate{' '}
+              <span className="text-primary font-semibold">Full Stack Software Developer</span>{' '}
+              🚀 with experience in building Web applications with{' '}
+              <span className="text-accent font-medium">Python / FastAPI / C# / ASP.NET Core / React</span>{' '}
+              and some other cool libraries and frameworks.
+            </p>
+
+            {/* Social Icons */}
+            <div className="flex items-center gap-4 pt-4">
+              <a
+                href="https://github.com/Adityalolla04"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-300"
+                aria-label="GitHub"
+              >
+                <Github className="w-6 h-6" />
+              </a>
+              <a
+                href="https://linkedin.com/in/adityalolla"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-300"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-6 h-6" />
+              </a>
+              <a
+                href="mailto:adilolla0405@gmail.com"
+                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-300"
+                aria-label="Email"
+              >
+                <Mail className="w-6 h-6" />
+              </a>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap gap-4 pt-4">
+              <Button 
+                size="lg"
+                className="btn-primary-glow text-lg px-8 py-6 rounded-xl font-semibold"
+                onClick={() => scrollToSection('contact')}
+              >
+                <span className="relative z-10">Contact Me</span>
+              </Button>
+              <Button 
+                variant="outline"
+                size="lg"
+                className="text-lg px-8 py-6 rounded-xl font-semibold border-2 border-primary/50 hover:bg-primary/10 hover:border-primary transition-all duration-300"
+                onClick={() => scrollToSection('experience')}
+              >
+                See My Resume
+              </Button>
+            </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <Button 
-              size="lg" 
-              className="group relative overflow-hidden hover-glow px-8 py-6 text-lg"
-              onClick={() => scrollToSection('experience')}
-            >
-              <span className="relative z-10 flex items-center gap-2">
-                View My Experience
-                <ExternalLink className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="group glass-card hover-glow px-8 py-6 text-lg border-primary/30 hover:border-primary"
-              onClick={() => scrollToSection('contact')}
-            >
-              <span className="flex items-center gap-2">
-                Get In Touch
-                <ChevronDown className="h-5 w-5 group-hover:translate-y-1 transition-transform" />
-              </span>
-            </Button>
+          {/* Right Side - Illustration/Avatar */}
+          <div className="hidden lg:flex justify-center items-center">
+            <div className="relative">
+              {/* Developer Illustration - Using an emoji-based representation */}
+              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center animate-pulse-glow">
+                <div className="text-9xl">👨‍💻</div>
+              </div>
+              
+              {/* Floating Tech Icons */}
+              <div className="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-card flex items-center justify-center shadow-lg animate-float" style={{ animationDelay: '0s' }}>
+                <span className="text-3xl">⚛️</span>
+              </div>
+              <div className="absolute -bottom-4 -left-4 w-14 h-14 rounded-full bg-card flex items-center justify-center shadow-lg animate-float" style={{ animationDelay: '1s' }}>
+                <span className="text-2xl">🐍</span>
+              </div>
+              <div className="absolute top-1/2 -right-8 w-12 h-12 rounded-full bg-card flex items-center justify-center shadow-lg animate-float" style={{ animationDelay: '2s' }}>
+                <span className="text-xl">💾</span>
+              </div>
+              <div className="absolute -top-8 left-1/4 w-12 h-12 rounded-full bg-card flex items-center justify-center shadow-lg animate-float" style={{ animationDelay: '3s' }}>
+                <span className="text-xl">☁️</span>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="rounded-full glass-card"
-            onClick={() => scrollToSection('about')}
-          >
-            <ChevronDown className="h-6 w-6" />
-          </Button>
-        </div>
+      {/* Scroll Down Indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <button
+          onClick={() => scrollToSection('about')}
+          className="w-12 h-12 rounded-full bg-secondary/50 flex items-center justify-center hover:bg-primary/50 transition-colors"
+          aria-label="Scroll down"
+        >
+          <ChevronDown className="w-6 h-6" />
+        </button>
       </div>
     </section>
   );
