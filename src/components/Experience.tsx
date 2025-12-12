@@ -5,79 +5,100 @@ import { TrendingUp, Calendar, MapPin, Building } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Data Engineer",
-      company: "Evoke Technologies",
-      location: "Hyderabad, India",
-      duration: "Apr 2022 – Dec 2023",
+      title: "Software Engineer",
+      company: "Community Dreams Foundations",
+      location: "Florida - Remote",
+      duration: "Aug 2025 – Present",
       achievements: [
-        "Designed automated ingestion pipelines using Python and SQL Server, orchestrated via Airflow, reducing manual filing uploads and eliminating daily delays",
-        "Built scalable ETL workflows with PySpark and AWS Glue to clean and unify legal filings, improving accuracy of parent-child case linkages by 60%",
-        "Engineered real-time streaming pipelines using Apache Spark on AWS EMR, enabling customers to access law filings orders within minutes and reducing latency by 20%",
-        "Integrated AWS S3 for raw document archiving with AWS Redshift for structured storage, ensuring seamless access to both unstructured filings and BI-ready datasets",
-        "Automated serverless workflows with AWS Lambda and Terraform, streamlining deployments and ensuring environment consistency across dev, test, and production",
-        "Deployed Spark jobs and ML models in Docker containers, scaled via Kubernetes, enabling seamless handling of month-end filing spikes without downtime",
-        "Delivered fast, metadata-driven search APIs using Solr integrated with C# and ASP.Net Core API services, reducing search times from hours to seconds",
-        "Developed predictive compliance models in Python and deployed them within Spark jobs, reducing compliance review errors by 12% before manual checks",
-        "Built interactive dashboards with Tableau, Power BI, and Streamlit on AWS, empowering compliance officers to monitor daily filings and cutting reporting cycles by 40%",
-        "Implemented monitoring and alerting through Splunk and AWS CloudWatch, proactively resolving infrastructure and ETL issues before impacting end users",
-        "Coordinated Agile Scrum sprints with a 40-member team, performing 40+ peer code reviews via GitHub to ensure high-quality, production-ready code",
-        "Tested and validated legal data APIs with Postman before integrating into ingestion pipelines, ensuring error-free ingestion from external partners",
-        "Optimized compute workloads on AWS EC2 and EMR, balancing batch and streaming jobs for cost-efficiency while maintaining real-time responsiveness"
+        "Developed and maintained full-stack applications using C#, ASP.NET Core, Web API and React, improving system scalability and reliability for hundreds of active users",
+        "Collaborated with cross-functional teams to design and ship new features, reducing development cycle time by 20% through improved Agile workflows and code quality practices",
+        "Implemented secure REST API endpoints and integrated multiple third-party services, increasing platform functionality and enhancing user experience, resulting in a 15% increase in feature adoption",
+        "Optimized backend performance and database interactions, reducing API response times by 30%"
       ],
       tools: [
-        "Python", "SQL Server", "Apache Airflow", "PySpark", "AWS Glue", "Apache Spark", 
-        "AWS EMR", "AWS S3", "AWS Redshift", "AWS Lambda", "Terraform", "Docker", 
-        "Kubernetes", "Solr", "C#", "ASP.Net Core", "Tableau", "Power BI", "Streamlit", 
-        "Splunk", "AWS CloudWatch", "GitHub", "Postman", "AWS EC2"
+        "C#", "ASP.NET Core", "Web API", "React", "REST API", "Agile", "Third-party Integrations"
       ],
       color: "border-l-primary"
     },
     {
-      title: "Data and Automation Engineer", 
-      company: "Kannai Storage Solutions",
-      location: "Hyderabad, India",
-      duration: "Aug 2021 – Mar 2022",
+      title: "Student Assistant",
+      company: "University at Buffalo",
+      location: "Buffalo, NY",
+      duration: "Mar 2024 – May 2025",
       achievements: [
-        "Engineered real-time ingestion pipelines using Apache Kafka and Amazon S3 to capture IoT sensor data, CAD measurement files, and structured logs, enabling scalable storage and historical audit",
-        "Designed dbt transformation layers on top of Snowflake and S3, automating validations for warehouse dimensions and material rules, reducing manual rework by 60%",
-        "Built and orchestrated ETL workflows with Apache Airflow and AWS Lambda, coordinating simulation triggers and load tests to improve pipeline transparency and reduce failures",
-        "Optimized Snowflake schemas with partitioning and clustering while integrating Apache Spark batch jobs, achieving faster analytics queries and efficient historical backfills",
-        "Automated rack load simulations using AWS Lambda with Python and MATLAB outputs, integrated with Amazon SNS to send real-time anomaly alerts to operations teams",
-        "Developed SQL workflows in PostgreSQL integrated with Airflow DAGs, streamlining order tracking, delivery scheduling, and installation status monitoring to prevent supply chain delays",
-        "Implemented Apache Atlas with Great Expectations to enforce data lineage, governance, and validation checks, increasing trust and compliance across engineering and supply chain teams",
-        "Built interactive Tableau dashboards powered by Snowflake and dbt models to track rack capacity, aisle utilization, and cost scenarios, driving a 70% boost in sales conversions",
-        "Packaged and deployed Python automation scripts with Docker across Lambda and Airflow workers, ensuring reproducible deployments and reducing environment conflicts",
-        "Automated large-scale transformations using Apache Spark and dbt before loading into Snowflake, improving efficiency for data backfills and recomputations across historical projects",
-        "Applied Lean Six Sigma methodologies in combination with data pipelines (Airflow + Snowflake) to optimize procurement workflows, achieving a 15% reduction in material costs",
-        "Documented architecture, workflows, and governance models in Confluence while integrating alerting via Amazon SNS, improving cross-team collaboration and operational reliability"
+        "Developed a campus dining application with clock-in/clock-out functionality for food processing units, increasing time-tracking accuracy and improving operational efficiency by 20%",
+        "Implemented cost-management features that optimized resource usage and resulted in a 15% reduction in overall food-processing expenses",
+        "Designed intuitive user interfaces and built Python backend services to support core application workflows, ensuring a seamless experience for both staff and administrators",
+        "Collaborated closely with campus dining teams to gather requirements and iterate on feedback, increasing user satisfaction by 25%",
+        "Performed data analysis on food-processing metrics to identify inefficiencies and deployed solutions that reduced operational waste by 10%"
       ],
       tools: [
-        "Apache Kafka", "Amazon S3", "dbt", "Snowflake", "Apache Airflow", "AWS Lambda", 
-        "Apache Spark", "Python", "MATLAB", "Amazon SNS", "PostgreSQL", "Apache Atlas", 
-        "Great Expectations", "Tableau", "Docker", "Lean Six Sigma", "Confluence"
+        "Python", "Data Analysis", "UI/UX Design", "Backend Services", "Cost Management"
       ],
       color: "border-l-accent"
     },
     {
-      title: "SQL Developer",
-      company: "Worksbot Applications",
-      location: "Hyderabad, India", 
-      duration: "Jan 2021 – Jun 2021",
+      title: "Software Engineer",
+      company: "Evoke Technologies – CSC Global",
+      location: "Hyderabad, India",
+      duration: "Apr 2022 – Dec 2023",
       achievements: [
-        "Designed and optimized SQL Server database schemas while implementing stored procedures and indexing strategies, improving reporting query performance by 40%",
-        "Built SSIS-based ETL pipelines to automate ingestion of IoT sensor readings and Excel production logs, ensuring real-time updates to centralized SQL Server tables",
-        "Integrated Tableau and Power BI dashboards with SQL Server views and window functions to deliver instant visibility into production throughput, downtime, and defect rates",
-        "Developed SSRS reports and automated scheduling jobs to deliver weekly Defect Summary Reports to supervisors, ensuring compliance and timely decision-making",
-        "Applied Lean Six Sigma principles with SQL performance tuning to reduce material waste by 15% and accelerate daily KPI report generation for engineers",
-        "Streamlined defect tracking by combining SQL triggers, SSIS workflows, and stored procedures, eliminating manual data entry errors and ensuring high data accuracy",
-        "Version-controlled database scripts, schema changes, and ETL jobs in Git, enabling rollback and collaboration during iterative improvements",
-        "Enforced data governance by applying SQL validation rules and standardized naming conventions across SSIS pipelines and reporting layers, improving data consistency",
-        "Partnered with production engineers to design Power BI dashboards powered by optimized SQL joins and indexing, providing real-time visibility into defect trends",
-        "Automated daily performance reports through SSRS integrated with SQL stored procedures, reducing manual reporting effort and ensuring timely audit readiness"
+        "Spearheaded API and automation workflows for investment operations using Python FastAPI and Web API with C#, REST, SQL Server and PostgreSQL, Angular, and TypeScript, delivering 25% on-time sprints with Agile and clean code practices",
+        "Built end-to-end filters and review flows from PostgreSQL or SQL Server schemas with SQLAlchemy or EF Core through FastAPI or Web API to Angular UI, reducing analyst triage time by 40% and keeping p95 API latency under 500ms",
+        "Designed and shipped a search and retrieval layer using vector databases (pgvector/FAISS) with batch and near real-time updates, improving relevance by 25%",
+        "Resolved over 40 production and pre-production defects across API logic, data handling, and UI performance, lowering repeat incidents by 30% and improving user satisfaction by 20%",
+        "Contributed migration to modular cloud services on Azure containers with zero-downtime cutover, increasing service throughput by 35% and reducing cold-start latency by 22%",
+        "Implemented secure-by-default patterns including JWT bearer authentication, role-based authorization, CORS, TLS hardening, and Swagger with API versioning",
+        "Delivered Angular and TypeScript user interfaces with reactive forms, interceptors, and pagination, improving stability by 70% and reducing multi-record edit time by 50%",
+        "Automated CI/CD with GitHub Actions and Jenkins using blue-green releases, reducing deployment downtime by 30% and shortening lead time by 45%",
+        "Instrumented health checks, structured logging, and SLO dashboards with ILogger and Splunk, and added AI summaries with Azure OpenAI and LangChain to speed analyst reviews by 30%"
       ],
       tools: [
-        "SQL Server", "SSIS", "Tableau", "Power BI", "SSRS", "Git", "Lean Six Sigma",
-        "Stored Procedures", "SQL Triggers", "Indexing", "Window Functions"
+        "Python", "FastAPI", "C#", "ASP.NET Core", "SQL Server", "PostgreSQL", "Angular", "TypeScript",
+        "SQLAlchemy", "EF Core", "pgvector", "FAISS", "Azure", "Docker", "JWT", "LangChain", "Azure OpenAI",
+        "GitHub Actions", "Jenkins", "Splunk", "Swagger"
+      ],
+      color: "border-l-primary"
+    },
+    {
+      title: ".NET Developer",
+      company: "Kannai Storage Solutions – Godrej and Boyce Mfg.",
+      location: "Hyderabad, India",
+      duration: "Aug 2021 – Mar 2022",
+      achievements: [
+        "Designed a quotation and rack-configuration module using ASP.NET Core Web API, Angular, and PostgreSQL that replaced spreadsheet workflows and cut quote turnaround time by 50%",
+        "Built order tracking and delivery scheduling APIs with server-side pagination, filtering, and sorting, reducing page load times by 45% and eliminating month-end timeouts",
+        "Engineered responsive Angular UI screens with Reactive Forms and route guards, increasing form completion rates by 35% and dropping validation errors by 40%",
+        "Modeled normalized schemas and wrote stored procedures and views in PostgreSQL, improving complex query execution times by 30%",
+        "Implemented JWT-based authentication and role-based authorization in ASP.NET Core and Angular route guards, passing internal security checks with 0 critical findings",
+        "Delivered event and milestone notifications for installation workflows via webhooks and email, reducing missed handoffs between sales and operations by 40%",
+        "Optimized API performance with EF Core no-tracking projections, sargable predicates, and targeted indexing, lowering P95 endpoint latency by 32%",
+        "Automated CI/CD with Jenkins and GitHub, cutting deployment time from hours to 15 minutes and reducing manual errors by 90%"
+      ],
+      tools: [
+        "ASP.NET Core", "Angular", "PostgreSQL", "EF Core", "JWT", "REST API", "Jenkins", "GitHub",
+        "Stored Procedures", "Reactive Forms", "Webhooks"
+      ],
+      color: "border-l-accent"
+    },
+    {
+      title: "Software Engineer",
+      company: "Worksbot Applications",
+      location: "Hyderabad, India",
+      duration: "Jan 2021 – Jun 2021",
+      achievements: [
+        "Collaborated with sales, operations, and installation teams in Scrum ceremonies to refine acceptance criteria and ship bi-weekly increments with 95% on-time delivery",
+        "Designed and normalized SQL Server schemas with primary/foreign keys, check constraints, and indexing strategy, improving complex query performance by 40%",
+        "Authored parameterized T-SQL stored procedures, functions, and views to replace ad-hoc queries, cutting CPU utilization by 25%",
+        "Tuned high-cost queries using sargable predicates, covering indexes, and OFFSET/FETCH pagination, reducing P95 response times by 35%",
+        "Built .NET Forms (WinForms) data-entry and approval modules in C# with ADO.NET, reducing manual entry time by 45%",
+        "Implemented robust on-form validation and server-side checks aligned with database constraints, lowering data-quality defects by 30%",
+        "Added transactional integrity with BEGIN TRANSACTION and TRY…CATCH blocks, reducing partial-write incidents by 100%",
+        "Automated schema and script versioning in Git with peer review and SSMS deployment checklists, reducing promotion errors by 90%"
+      ],
+      tools: [
+        "SQL Server", "T-SQL", "C#", ".NET WinForms", "ADO.NET", "Git", "SSMS",
+        "Stored Procedures", "Indexing", "Scrum"
       ],
       color: "border-l-primary"
     }
@@ -86,19 +107,19 @@ const Experience = () => {
   const achievements = [
     {
       metric: "40%",
-      description: "Reduction in reporting cycle time for real-time legal filings platform"
+      description: "Reduction in analyst triage time through advanced filtering and UX improvements"
     },
     {
-      metric: "60%", 
-      description: "Improvement in data accuracy through automated ETL workflows"
+      metric: "25%",
+      description: "Improvement in search relevance using vector databases and RAG"
     },
     {
       metric: "50%",
-      description: "Improvement in warehouse operational reliability with real-time monitoring"
+      description: "Reduction in quote turnaround time with automated workflows"
     },
     {
-      metric: "12%",
-      description: "Reduction in compliance errors through predictive models"
+      metric: "30%",
+      description: "Faster analyst reviews with AI summaries using Azure OpenAI and LangChain"
     }
   ];
 
@@ -110,7 +131,7 @@ const Experience = () => {
             Professional <span className="gradient-text">Experience</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Hands-on experience designing and optimizing large-scale data pipelines, real-time streaming solutions, and cloud-native architectures
+            Building high-performance APIs, full-stack applications, and AI-powered solutions across enterprise environments
           </p>
         </div>
 
