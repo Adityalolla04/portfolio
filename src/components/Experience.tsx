@@ -1,6 +1,6 @@
 import { Card } from '@/components/ui/card';
-import { badgeVariants } from '@/components/ui/badge';
-import { Badge, Building, Calendar, MapPin } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
+import { Building, Calendar, MapPin } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
@@ -163,13 +163,13 @@ const Experience = () => {
                     {/* Tools */}
                     <div className="flex flex-wrap gap-2">
                       {exp.tools.map((tool) => (
-                        <Badge 
-                          key={tool}
-                          variant="outline"
-                          className="bg-primary/10 border-primary/30 text-primary hover:bg-primary/20 transition-colors"
-                        >
-                          {tool}
-                        </Badge>
+                        <div key={tool} className="bg-primary/10 border-primary/30 text-primary hover:bg-primary/20 transition-colors rounded-md px-2 py-1">
+                          <Badge 
+                            variant="secondary"
+                          >
+                            {tool}
+                          </Badge>
+                        </div>
                       ))}
                     </div>
                   </Card>

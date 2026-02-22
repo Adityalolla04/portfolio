@@ -1,5 +1,7 @@
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+
 import { 
   Mail, 
   Phone, 
@@ -132,10 +134,10 @@ const Contact = () => {
               </p>
               
               <div className="grid grid-cols-2 gap-3 mb-6">
-                <Badge variant="secondary" className="justify-center py-2">Web Development</Badge>
-                <Badge variant="secondary" className="justify-center py-2">AI/ML Integration</Badge>
-                <Badge variant="secondary" className="justify-center py-2">Cloud Solutions</Badge>
-                <Badge variant="secondary" className="justify-center py-2">API Development</Badge>
+                <Badge variant="secondary"><span>Web Development</span></Badge>
+                <Badge variant="secondary"><span>AI/ML Integration</span></Badge>
+                <Badge variant="secondary"><span>Cloud Solutions</span></Badge>
+                <Badge variant="secondary"><span>API Development</span></Badge>
               </div>
 
               <div className="space-y-4">
@@ -153,9 +155,9 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">Availability</span>
-                  <Badge className="bg-green-500/20 text-green-400 border-green-500/30">
+                  <div className="bg-green-500/20 text-green-400 border border-green-500/30 rounded-full px-3 py-1 text-sm font-medium">
                     Open to Opportunities
-                  </Badge>
+                  </div>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">Location</span>

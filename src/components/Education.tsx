@@ -1,6 +1,6 @@
 import { Card } from '@/components/ui/card';
-import { badgeVariants } from '@/components/ui/badge';
-import { GraduationCap, Award, Badge } from 'lucide-react';
+import { GraduationCap, Award } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
 
 const Education = () => {
   const certifications = [
@@ -56,10 +56,10 @@ const Education = () => {
             <div className="flex flex-wrap gap-2">
               {certifications.map((cert) => (
                 <Badge 
-                  key={cert} 
-                  className="bg-primary/20 text-primary border-primary/30 hover:bg-primary/30 transition-colors"
+                  key={cert}
+                  variant="secondary"
                 >
-                  {cert}
+                  <span>{cert}</span>
                 </Badge>
               ))}
             </div>
