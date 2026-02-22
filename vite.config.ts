@@ -8,7 +8,7 @@ import { componentTagger } from "lovable-tagger";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(({ mode }) => ({
-  base: '/',
+  base: '/portfolio/',
   server: {
     host: "::",
     port: 8080,
