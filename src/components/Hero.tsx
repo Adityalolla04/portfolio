@@ -44,22 +44,20 @@ const Hero = () => {
             {/* Greeting with Wave */}
             <div className="flex items-center gap-3 text-2xl sm:text-3xl">
               <span className="wave-emoji text-4xl">👋</span>
-              <span className="text-foreground font-medium">Hello!</span>
+              <span className="text-foreground font-medium">Hello, I'm</span>
             </div>
 
             {/* Name */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              I'm{' '}
               <span className="text-gradient-animate">Aditya Srivatsav Lolla</span>
             </h1>
 
             {/* Title */}
             <p className="text-xl sm:text-2xl text-muted-foreground">
-              A passionate{' '}
-              <span className="text-primary font-semibold">Full Stack Software Developer</span>{' '}
-              🚀 with experience in building Web applications with{' '}
-              <span className="text-accent font-medium">Python / FastAPI / C# / ASP.NET Core / React</span>{' '}
-              and some other cool libraries and frameworks.
+              A results-driven{' '}
+              <span className="text-primary font-semibold">Senior Software Engineer</span>{' '}
+              🚀 specializing in secure, high-performance applications using{' '}
+              <span className="text-accent font-medium">C#, Python, FastAPI, and TypeScript</span>.
             </p>
 
             {/* Social Icons */}
@@ -83,7 +81,7 @@ const Hero = () => {
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="mailto:adilolla0405@gmail.com"
+                href="mailto:ladityasrivatsav@gmail.com"
                 className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-300"
                 aria-label="Email"
               >
@@ -106,7 +104,7 @@ const Hero = () => {
                 className="text-lg px-8 py-6 rounded-xl font-semibold border-2 border-primary/50 hover:bg-primary/10 hover:border-primary transition-all duration-300"
                 onClick={() => scrollToSection('experience')}
               >
-                See My Resume
+                View Experience
               </Button>
             </div>
           </div>

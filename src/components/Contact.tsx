@@ -1,6 +1,6 @@
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { badgeVariants } from '@/components/ui/badge';
 import { 
   Mail, 
   Phone, 
@@ -9,7 +9,8 @@ import {
   Linkedin, 
   MessageSquare,
   Send,
-  Download
+  Download,
+  Badge
 } from 'lucide-react';
 
 const Contact = () => {
@@ -17,8 +18,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "adilolla0405@gmail.com",
-      href: "mailto:adilolla0405@gmail.com",
+      value: "ladityasrivatsav@gmail.com",
+      href: "mailto:ladityasrivatsav@gmail.com",
       color: "text-primary"
     },
     {
@@ -31,7 +32,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Plano, TX",
+      value: "Saint Louis, MO",
       href: "",
       color: "text-primary"
     }
@@ -60,7 +61,7 @@ const Contact = () => {
             Let's <span className="gradient-text">Connect</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to collaborate on your next data project? Let's discuss how we can turn your data into actionable insights
+            Ready to collaborate on your next project? Let's discuss how we can create something amazing together.
           </p>
         </div>
 
@@ -129,19 +130,19 @@ const Contact = () => {
             <Card className="glass-card hover-glow p-8 bg-gradient-to-br from-primary/10 to-accent/10">
               <h3 className="text-2xl font-bold mb-6">Ready to Collaborate?</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                I'm always excited to work on challenging data projects. Whether you need help with:
+                I'm always excited to work on challenging projects. Whether you need help with:
               </p>
               
               <div className="grid grid-cols-2 gap-3 mb-6">
-                <Badge variant="secondary" className="justify-center py-2">ETL Pipelines</Badge>
-                <Badge variant="secondary" className="justify-center py-2">ML Models</Badge>
-                <Badge variant="secondary" className="justify-center py-2">Cloud Migration</Badge>
-                <Badge variant="secondary" className="justify-center py-2">Data Analytics</Badge>
+                <Badge variant="secondary" className="justify-center py-2">Web Development</Badge>
+                <Badge variant="secondary" className="justify-center py-2">AI/ML Integration</Badge>
+                <Badge variant="secondary" className="justify-center py-2">Cloud Solutions</Badge>
+                <Badge variant="secondary" className="justify-center py-2">API Development</Badge>
               </div>
 
               <div className="space-y-4">
                 <Button size="lg" className="w-full hover-glow group" asChild>
-                  <a href="mailto:adilolla0405@gmail.com?subject=Data Project Collaboration">
+                  <a href="mailto:ladityasrivatsav@gmail.com?subject=Project Collaboration">
                     <Send className="h-5 w-5 mr-2 group-hover:translate-x-1 transition-transform" />
                     Send me an Email
                   </a>
@@ -160,7 +161,7 @@ const Contact = () => {
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">Location</span>
-                  <Badge variant="outline">Remote / Plano, TX</Badge>
+                  <Badge variant="outline">Remote / Saint Louis, MO</Badge>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-muted-foreground">Response Time</span>
@@ -174,7 +175,7 @@ const Contact = () => {
         {/* Footer */}
         <div className="mt-16 pt-8 border-t border-border text-center">
           <p className="text-muted-foreground">
-            © 2024 Aditya Srivatsav Lolla. Built with passion for data and modern web technologies.
+            © 2026 Aditya Srivatsav Lolla. Built with passion and modern web technologies.
           </p>
         </div>
       </div>

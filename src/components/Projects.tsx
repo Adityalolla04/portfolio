@@ -1,7 +1,7 @@
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { ExternalLink, Github, BookOpen } from 'lucide-react';
+import { badgeVariants } from '@/components/ui/badge';
+import { ExternalLink, Github, BookOpen, Badge } from 'lucide-react';
 import healthcareAi from '@/assets/healthcare-ai.jpg';
 import smartstockAi from '@/assets/smartstock-ai.jpg';
 import prophetForecast from '@/assets/prophet-forecast.jpg';
@@ -86,8 +86,9 @@ const Projects = () => {
   const otherProjects = projects.filter(p => !p.featured);
 
   return (
-    <section id="projects" className="section-padding">
+    <section id="projects" className="section-padding bg-background">
       <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             Featured <span className="gradient-text">Projects</span>
@@ -95,66 +96,49 @@ const Projects = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A showcase of end-to-end data science and engineering projects solving real-world problems
           </p>
+          <div className="w-24 h-1 mx-auto mt-4 rounded-full" style={{ background: 'var(--gradient-primary)' }} />
         </div>
 
         {/* Featured Projects */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
           {featuredProjects.map((project, index) => (
-            <Card 
-              key={index}
-              className="glass-card hover-glow group overflow-hidden"
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
-                <Badge className="absolute top-4 left-4 bg-primary/20 text-primary border-primary/30">
-                  {project.category}
-                </Badge>
+            <Card key={index} className="glass-card-deep hover-glow-deep overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+              <div className="relative">
+                <img src={project.image} alt={project.title} className="w-full h-64 object-cover" />
+                <div className="absolute top-4 right-4">
+                  <Badge variant="secondary" className="text-sm">{project.category}</Badge>
+                </div>
               </div>
-              
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
-                  {project.description}
-                </p>
-                
+                <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
+                <p className="text-muted-foreground mb-4 h-24 overflow-hidden">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary" className="text-xs">
-                      {tech}
-                    </Badge>
+                    <Badge key={tech} variant="outline">{tech}</Badge>
                   ))}
                 </div>
-
-                <div className="flex gap-2">
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="h-4 w-4 mr-2" />
+                <div className="flex gap-4">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer">
+                    <Button variant="default">
+                      <Github className="mr-2 h-4 w-4" />
                       Code
-                    </a>
-                  </Button>
-                  {project.medium && (
-                    <Button variant="outline" size="sm" asChild>
-                      <a href={project.medium} target="_blank" rel="noopener noreferrer">
-                        <BookOpen className="h-4 w-4 mr-2" />
-                        Article
-                      </a>
                     </Button>
+                  </a>
+                  {project.medium && (
+                    <a href={project.medium} target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline">
+                        <BookOpen className="mr-2 h-4 w-4" />
+                        Article
+                      </Button>
+                    </a>
                   )}
                   {project.demo && (
-                    <Button size="sm" asChild>
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4 mr-2" />
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                      <Button variant="secondary">
+                        <ExternalLink className="mr-2 h-4 w-4" />
                         Demo
-                      </a>
-                    </Button>
+                      </Button>
+                    </a>
                   )}
                 </div>
               </div>
@@ -163,72 +147,54 @@ const Projects = () => {
         </div>
 
         {/* Other Projects */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-8 text-center">More Projects</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {otherProjects.map((project, index) => (
-              <Card 
-                key={index}
-                className="glass-card hover-glow p-6 group"
-                style={{ animationDelay: `${(index + featuredProjects.length) * 100}ms` }}
-              >
-                <div className="flex justify-between items-start mb-3">
-                  <Badge variant="outline" className="text-xs">
-                    {project.category}
-                  </Badge>
-                  <div className="flex gap-2">
-                    <Button variant="ghost" size="icon" className="h-8 w-8" asChild>
-                      <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        <Github className="h-4 w-4" />
-                      </a>
-                    </Button>
+        <div className="text-center mb-16">
+          <h3 className="text-3xl font-bold">More <span className="gradient-text">Projects</span></h3>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {otherProjects.map((project, index) => (
+            <Card key={index} className="glass-card hover-glow p-6 flex flex-col justify-between">
+              <div>
+                <div className="flex justify-between items-start mb-4">
+                  <Badge variant="secondary" className="text-xs">{project.category}</Badge>
+                  <div className="flex gap-3">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
+                    </a>
                     {project.medium && (
-                      <Button variant="ghost" size="icon" className="h-8 w-8" asChild>
-                        <a href={project.medium} target="_blank" rel="noopener noreferrer">
-                          <BookOpen className="h-4 w-4" />
-                        </a>
-                      </Button>
+                      <a href={project.medium} target="_blank" rel="noopener noreferrer">
+                        <BookOpen className="h-5 w-5 text-muted-foreground hover:text-foreground transition-colors" />
+                      </a>
                     )}
                   </div>
                 </div>
-                
-                <h4 className="font-semibold mb-2 group-hover:text-primary transition-colors">
-                  {project.title}
-                </h4>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-1">
-                  {project.technologies.slice(0, 3).map((tech) => (
-                    <Badge key={tech} variant="secondary" className="text-xs">
-                      {tech}
-                    </Badge>
-                  ))}
-                  {project.technologies.length > 3 && (
-                    <Badge variant="outline" className="text-xs">
-                      +{project.technologies.length - 3}
-                    </Badge>
-                  )}
-                </div>
-              </Card>
-            ))}
-          </div>
+                <h4 className="text-xl font-bold mb-2">{project.title}</h4>
+                <p className="text-sm text-muted-foreground mb-4 h-20 overflow-hidden">{project.description}</p>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.slice(0, 3).map((tech) => (
+                  <Badge key={tech} variant="outline">{tech}</Badge>
+                ))}
+                {project.technologies.length > 3 && (
+                  <Badge variant="outline">+{project.technologies.length - 3}</Badge>
+                )}
+              </div>
+            </Card>
+          ))}
         </div>
 
         {/* CTA to GitHub */}
-        <Card className="glass-card p-8 text-center bg-gradient-to-r from-primary/10 to-accent/10">
+        <div className="text-center mt-20">
           <h3 className="text-2xl font-bold mb-4">Explore More Projects</h3>
-          <p className="text-muted-foreground mb-6">
-            Discover my complete portfolio on GitHub with detailed documentation and implementation guides
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+            Discover my complete portfolio on GitHub with detailed documentation and implementation guides.
           </p>
-          <Button size="lg" asChild className="hover-glow">
-            <a href="https://github.com/Adityalolla04" target="_blank" rel="noopener noreferrer">
-              <Github className="h-5 w-5 mr-2" />
+          <a href="https://github.com/Adityalolla04" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" variant="default">
+              <Github className="mr-2 h-5 w-5" />
               View All Projects on GitHub
-            </a>
-          </Button>
-        </Card>
+            </Button>
+          </a>
+        </div>
       </div>
     </section>
   );

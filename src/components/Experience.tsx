@@ -1,20 +1,34 @@
 import { Card } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Building, Calendar, MapPin } from 'lucide-react';
+import { badgeVariants } from '@/components/ui/badge';
+import { Badge, Building, Calendar, MapPin } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
     {
+      title: "Senior Software Engineer",
+      company: "Equifax Workforce Solutions Inc.",
+      location: "Saint Louis, MO",
+      duration: "Jan 2026 – Present",
+      logo: "🏢",
+      achievements: [
+        "Automated sensitive credential migration with a C# Console App, ensuring 100% data integrity.",
+        "Performed penetration testing and refactored code to mitigate vulnerabilities.",
+        "Built intelligent agentic workflows for document analysis using ML.NET, Lang Chain, and Lang Graph.",
+        "Designed and deployed a scalable User Management interface using ASP.NET MVC and GCP."
+      ],
+      tools: ["C#", ".NET Framework", "ML.NET", "LangChain", "GCP", "SQL"]
+    },
+    {
       title: "Software Engineer",
       company: "Community Dreams Foundations",
       location: "Florida - Remote",
-      duration: "Aug 2025 – Present",
-      logo: "🏢",
+      duration: "Aug 2025 – Dec 2025",
+      logo: "🤝",
       achievements: [
-        "Developed full-stack applications using C#, ASP.NET Core, Web API and React, improving system scalability for hundreds of users",
-        "Reduced development cycle time by 20% through improved Agile workflows and code quality practices",
-        "Implemented secure REST API endpoints and integrated third-party services, increasing feature adoption by 15%",
-        "Optimized backend performance, reducing API response times by 30%"
+        "Developed full-stack applications using C#, ASP.NET Core, Web API and React, improving system scalability.",
+        "Reduced development cycle time by 20% through improved Agile workflows.",
+        "Implemented secure REST APIs, increasing feature adoption by 15%.",
+        "Optimized backend performance, reducing API response times by 30%."
       ],
       tools: ["C#", "ASP.NET Core", "React", "REST API", "Agile"]
     },
@@ -25,53 +39,49 @@ const Experience = () => {
       duration: "Mar 2024 – May 2025",
       logo: "🎓",
       achievements: [
-        "Built campus dining application with clock-in/clock-out functionality, improving operational efficiency by 20%",
-        "Implemented cost-management features resulting in 15% reduction in food-processing expenses",
-        "Designed Python backend services and intuitive UIs, increasing user satisfaction by 25%",
-        "Performed data analysis on metrics to reduce operational waste by 10%"
+        "Built a campus dining application with clock-in/out features, improving efficiency by 20%.",
+        "Implemented cost-management features, reducing expenses by 15%.",
+        "Designed Python backend services and intuitive UIs, increasing user satisfaction by 25%.",
       ],
       tools: ["Python", "Data Analysis", "UI/UX", "Backend Services"]
     },
     {
       title: "Software Engineer",
-      company: "Evoke Technologies – CSC Global",
+      company: "CSC Global",
       location: "Hyderabad, India",
       duration: "Apr 2022 – Dec 2023",
       logo: "💼",
       achievements: [
-        "Built API workflows with Python FastAPI and C# Web API, reducing analyst triage time by 40%",
-        "Designed search layer using pgvector/FAISS, improving relevance by 25%",
-        "Resolved 40+ production defects, lowering repeat incidents by 30%",
-        "Implemented JWT auth, CORS, TLS hardening cutting authentication errors by 30%",
-        "Added AI summaries with Azure OpenAI and LangChain, speeding analyst reviews by 30%"
+        "Built API workflows with Python FastAPI and C#, reducing analyst triage time by 40%.",
+        "Designed search layer using pgvector/FAISS, improving relevance by 25%.",
+        "Resolved 40+ production defects, lowering repeat incidents by 30%.",
+        "Added AI summaries with Azure OpenAI and LangChain, speeding analyst reviews by 30%."
       ],
-      tools: ["Python", "FastAPI", "C#", "ASP.NET Core", "Angular", "PostgreSQL", "Azure", "LangChain"]
+      tools: ["Python", "FastAPI", "C#", "Angular", "PostgreSQL", "Azure", "LangChain"]
     },
     {
       title: ".NET Developer",
-      company: "Kannai Storage Solutions",
+      company: "Godrej and Boyce Mfg.",
       location: "Hyderabad, India",
       duration: "Aug 2021 – Mar 2022",
       logo: "🏭",
       achievements: [
-        "Designed quotation module with ASP.NET Core and Angular, cutting turnaround time by 50%",
-        "Built order tracking APIs with pagination, reducing page load times by 45%",
-        "Engineered responsive Angular UI increasing form completion rates by 35%",
-        "Automated CI/CD with Jenkins, cutting deployment time from hours to 15 minutes"
+        "Designed quotation module with ASP.NET Core and Angular, cutting turnaround time by 50%.",
+        "Built order tracking APIs, reducing page load times by 45%.",
+        "Automated CI/CD with Jenkins, cutting deployment time from hours to 15 minutes."
       ],
-      tools: ["ASP.NET Core", "Angular", "PostgreSQL", "EF Core", "Jenkins"]
+      tools: ["ASP.NET Core", "Angular", "PostgreSQL", "Jenkins"]
     },
     {
       title: "Software Engineer",
       company: "Worksbot Applications",
       location: "Hyderabad, India",
-      duration: "Jan 2021 – Jun 2021",
+      duration: "Jul 2020 – Jun 2021",
       logo: "⚙️",
       achievements: [
-        "Designed SQL Server schemas improving query performance by 40%",
-        "Authored T-SQL stored procedures cutting CPU utilization by 25%",
-        "Built .NET WinForms modules reducing manual entry time by 45%",
-        "Automated schema versioning in Git reducing promotion errors by 90%"
+        "Designed SQL Server schemas improving query performance by 40%.",
+        "Authored T-SQL stored procedures cutting CPU utilization by 25%.",
+        "Built .NET WinForms modules reducing manual entry time by 45%."
       ],
       tools: ["SQL Server", "T-SQL", "C#", ".NET WinForms", "Git"]
     }

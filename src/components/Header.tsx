@@ -1,23 +1,23 @@
-import { useState, useEffect } from 'react';
+import * as React from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [scrolled, setScrolled] = React.useState(false);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
+  const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     setIsMenuOpen(false);
   };
 
-  const navItems = ['About', 'Skills', 'Experience', 'Projects', 'Contact'];
+  const navItems = ['About', 'Skills', 'Experience', 'Education', 'Projects', 'Contact'];
 
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -26,7 +26,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-xl font-bold gradient-text">
-            &lt;Aditya /&gt;
+            &lt;Aditya Lolla /&gt;
           </button>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -42,7 +42,7 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-3">
             <a href="https://github.com/Adityalolla04" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full hover:bg-primary/20 transition-colors"><Github className="w-5 h-5" /></a>
             <a href="https://linkedin.com/in/adityalolla" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full hover:bg-primary/20 transition-colors"><Linkedin className="w-5 h-5" /></a>
-            <a href="mailto:adilolla0405@gmail.com" className="p-2 rounded-full hover:bg-primary/20 transition-colors"><Mail className="w-5 h-5" /></a>
+            <a href="mailto:ladityasrivatsav@gmail.com" className="p-2 rounded-full hover:bg-primary/20 transition-colors"><Mail className="w-5 h-5" /></a>
           </div>
 
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>

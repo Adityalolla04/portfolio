@@ -1,81 +1,87 @@
+import React from 'react';
 import { Card } from '@/components/ui/card';
+import { badgeVariants } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Programming Languages",
+      title: "Programming & Scripting",
       skills: [
-        { name: "Python", emoji: "🐍", level: 90 },
-        { name: "C#", emoji: "💜", level: 85 },
-        { name: "TypeScript", emoji: "📘", level: 85 },
-        { name: "T-SQL", emoji: "🗃️", level: 88 },
-        { name: "JavaScript", emoji: "💛", level: 82 },
+        { name: "C#", emoji: "💜" },
+        { name: "Python", emoji: "🐍" },
+        { name: "TypeScript", emoji: "📘" },
+        { name: "T-SQL", emoji: "🗃️" },
+        { name: "HTML5/CSS3", emoji: "🎨" },
       ]
     },
     {
-      title: "Frameworks & Libraries",
+      title: "Runtimes & Frameworks",
       skills: [
-        { name: "FastAPI", emoji: "⚡", level: 88 },
-        { name: "ASP.NET Core", emoji: "🔷", level: 90 },
-        { name: "React", emoji: "⚛️", level: 85 },
-        { name: "Angular", emoji: "🅰️", level: 80 },
-        { name: "Node.js", emoji: "💚", level: 75 },
+        { name: "ASP.NET Core", emoji: "🔷" },
+        { name: "FastAPI", emoji: "⚡" },
+        { name: "React", emoji: "⚛️" },
+        { name: "Angular", emoji: "🅰️" },
+        { name: "Node.js", emoji: "💚" },
       ]
     },
     {
-      title: "Databases",
+      title: "Databases & Data Access",
       skills: [
-        { name: "SQL Server", emoji: "🗄️", level: 92 },
-        { name: "PostgreSQL", emoji: "🐘", level: 88 },
-        { name: "MongoDB", emoji: "🍃", level: 75 },
-        { name: "Redis", emoji: "🔴", level: 70 },
+        { name: "SQL Server", emoji: "🗄️" },
+        { name: "PostgreSQL", emoji: "🐘" },
+        { name: "MongoDB", emoji: "🍃" },
+        { name: "EF Core", emoji: "🧊" },
+        { name: "SQLAlchemy", emoji: "🧪" },
       ]
     },
     {
-      title: "AI/ML & Data",
+      title: "LLM & Machine Learning",
       skills: [
-        { name: "LangChain", emoji: "🔗", level: 80 },
-        { name: "Azure OpenAI", emoji: "🤖", level: 78 },
-        { name: "Pandas", emoji: "🐼", level: 85 },
-        { name: "NumPy", emoji: "🔢", level: 82 },
-        { name: "Data Analysis", emoji: "📊", level: 88 },
+        { name: "LangChain", emoji: "🔗" },
+        { name: "Azure OpenAI", emoji: "🤖" },
+        { name: "RAG", emoji: "📚" },
+        { name: "Pandas/NumPy", emoji: "🐼" },
+        { name: "Transformers", emoji: "🔄" },
       ]
     },
     {
-      title: "Cloud & DevOps",
+      title: "CI/CD, Cloud & DevOps",
       skills: [
-        { name: "Azure", emoji: "☁️", level: 85 },
-        { name: "Docker", emoji: "🐳", level: 82 },
-        { name: "Kubernetes", emoji: "☸️", level: 70 },
-        { name: "GitHub Actions", emoji: "🔄", level: 80 },
-        { name: "Jenkins", emoji: "🔧", level: 78 },
+        { name: "Azure", emoji: "☁️" },
+        { name: "AWS", emoji: "☁️" },
+        { name: "Docker", emoji: "🐳" },
+        { name: "Kubernetes", emoji: "☸️" },
+        { name: "GitHub Actions", emoji: "🚀" },
+        { name: "Jenkins", emoji: "🔧" },
       ]
     },
     {
-      title: "Tools & Others",
+      title: "Architecture & Tools",
       skills: [
-        { name: "Git", emoji: "📚", level: 90 },
-        { name: "Swagger/OpenAPI", emoji: "📝", level: 88 },
-        { name: "Postman", emoji: "📮", level: 85 },
-        { name: "Splunk", emoji: "📈", level: 75 },
-        { name: "Tableau", emoji: "📉", level: 72 },
+        { name: "Clean Architecture", emoji: "🏛️" },
+        { name: "Git", emoji: "🌿" },
+        { name: "Swagger/OpenAPI", emoji: "📝" },
+        { name: "Postman/Bruno", emoji: "📮" },
+        { name: "Splunk", emoji: "📈" },
       ]
     }
   ];
 
   const techStack = [
     { name: "Python", emoji: "🐍" },
-    { name: "FastAPI", emoji: "⚡" },
     { name: "C#", emoji: "💜" },
+    { name: "FastAPI", emoji: "⚡" },
     { name: ".NET Core", emoji: "🔷" },
     { name: "React", emoji: "⚛️" },
     { name: "TypeScript", emoji: "📘" },
     { name: "PostgreSQL", emoji: "🐘" },
     { name: "SQL Server", emoji: "🗄️" },
     { name: "Azure", emoji: "☁️" },
+    { name: "AWS", emoji: "☁️" },
     { name: "Docker", emoji: "🐳" },
     { name: "LangChain", emoji: "🔗" },
-    { name: "Git", emoji: "📚" },
+    { name: "Git", emoji: "🌿" },
   ];
 
   return (
@@ -84,10 +90,10 @@ const Skills = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            What <span className="gradient-text">I Do</span>
+            Technical <span className="gradient-text">Skills</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            FULL STACK DEVELOPMENT WITH AI/ML INTEGRATION
+            A showcase of my expertise in modern software engineering, from backend to frontend and AI.
           </p>
           <div className="w-24 h-1 mx-auto mt-4 rounded-full" style={{ background: 'var(--gradient-primary)' }} />
         </div>
@@ -105,27 +111,16 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Skill Categories with Progress Bars */}
+        {/* Skill Categories with Badges */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category) => (
             <Card key={category.title} className="glass-card hover-glow p-6">
               <h3 className="text-xl font-bold mb-6 gradient-text">{category.title}</h3>
-              <div className="space-y-4">
+              <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill) => (
-                  <div key={skill.name} className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <span className="text-lg">{skill.emoji}</span>
-                        <span className="font-medium">{skill.name}</span>
-                      </div>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
-                    </div>
-                    <div className="skill-progress">
-                      <div 
-                        className="skill-progress-bar"
-                        style={{ width: `${skill.level}%` }}
-                      />
-                    </div>
+                  <div key={skill.name} className={cn(badgeVariants({ variant: "secondary" }), "text-base py-1 px-3")}>
+                    <span className="mr-2">{skill.emoji}</span>
+                    {skill.name}
                   </div>
                 ))}
               </div>
@@ -133,7 +128,7 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* What I Can Do */}
+        {/* Core Competencies */}
         <div className="mt-20">
           <h3 className="text-2xl font-bold text-center mb-12">
             Core <span className="gradient-text">Competencies</span>
@@ -143,9 +138,9 @@ const Skills = () => {
               <div className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center" style={{ background: 'var(--gradient-primary)' }}>
                 <span className="text-4xl">🌐</span>
               </div>
-              <h4 className="text-xl font-bold mb-3">Full Stack Development</h4>
+              <h4 className="text-xl font-bold mb-3">Full Stack Engineering</h4>
               <p className="text-muted-foreground">
-                Building responsive web applications with Python, FastAPI, ASP.NET Core, React, and Angular with modern UI/UX practices.
+                Building secure, high-performance applications with C#, Python, FastAPI, ASP.NET Core, and modern frontend frameworks like React and Angular.
               </p>
             </Card>
 
@@ -153,19 +148,19 @@ const Skills = () => {
               <div className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center" style={{ background: 'var(--gradient-primary)' }}>
                 <span className="text-4xl">🤖</span>
               </div>
-              <h4 className="text-xl font-bold mb-3">AI/ML Integration</h4>
+              <h4 className="text-xl font-bold mb-3">AI & LLM Integration</h4>
               <p className="text-muted-foreground">
-                Integrating LangChain, Azure OpenAI, RAG systems, and vector databases to build intelligent, data-driven applications.
+                Designing and deploying intelligent agentic workflows and retrieval systems using LangChain, Azure OpenAI, RAG, and vector databases.
               </p>
             </Card>
 
             <Card className="glass-card hover-glow p-8 text-center">
               <div className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center" style={{ background: 'var(--gradient-primary)' }}>
-                <span className="text-4xl">📊</span>
+                <span className="text-4xl">🏗️</span>
               </div>
-              <h4 className="text-xl font-bold mb-3">Data Analytics</h4>
+              <h4 className="text-xl font-bold mb-3">Cloud & DevOps</h4>
               <p className="text-muted-foreground">
-                Creating data pipelines, dashboards with Tableau/Power BI, and performing analytics to drive business decisions.
+                Automating CI/CD pipelines, containerizing applications with Docker, and deploying scalable solutions on cloud platforms like Azure and AWS.
               </p>
             </Card>
           </div>
