@@ -1,6 +1,5 @@
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { badgeVariants } from '@/components/ui/badge';
 import { 
   Mail, 
   Phone, 
@@ -9,8 +8,7 @@ import {
   Linkedin, 
   MessageSquare,
   Send,
-  Download,
-  Badge
+  Download
 } from 'lucide-react';
 
 const Contact = () => {
