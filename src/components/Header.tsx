@@ -25,9 +25,11 @@ const Header = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-xl font-bold gradient-text">
-            &lt;Aditya Lolla /&gt;
-          </button>
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="text-xl font-bold gradient-text"
+            dangerouslySetInnerHTML={{ __html: '&lt;Aditya Lolla /&gt;' }}
+          ></button>
 
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
