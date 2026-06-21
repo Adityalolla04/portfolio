@@ -135,7 +135,7 @@ export default Hero;
                 <div className="w-72 h-72 rounded-full bg-gradient-to-br from-primary/8 to-accent/8 flex items-center justify-center">
                   <span className="text-8xl select-none">👨‍💻</span>
                 </div>
-              </div>
+              </div>h
               <div className="absolute -top-2 -right-4 bg-white rounded-xl px-3 py-2 shadow-lg border border-primary/15 text-sm font-semibold text-primary">5+ Years</div>
               <div className="absolute -bottom-2 -left-4 bg-white rounded-xl px-3 py-2 shadow-lg border border-accent/15 text-sm font-semibold text-accent">Senior Engineer</div>
             </div>
