@@ -1,9 +1,7 @@
 # Disabled - portfolio uses Vite/React build via deploy.yml instead
-# This Jekyll workflow was overriding the correct Vite build deployment
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
-  # Disabled auto-push - only run manually if needed
   workflow_dispatch:
 
 permissions:
